@@ -1,6 +1,7 @@
 package com.flipkart.service;
 
 public interface StudentInterface {
-	void viewCourse
+	String requestCatalog();
+	public void addCourse();
 
 }
