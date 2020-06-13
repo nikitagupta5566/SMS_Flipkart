@@ -37,7 +37,6 @@ public class CatalogDaoImpl implements CatalogDao{
 				course.setCourseid(rs.getInt("id"));
 				course.setCoursename(rs.getString("name"));
 				course.setCoursedescription(rs.getString("description"));
-//				logger.info(course.getCourseid());
 				course_list.add(course);
 			}
 			

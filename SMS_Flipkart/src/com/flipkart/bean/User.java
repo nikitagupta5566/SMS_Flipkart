@@ -6,7 +6,21 @@ public class User {
 	String username;
 	String password;
 	int id;
+	String gender;
 	
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getRole() {
 		return role;
 	}
