@@ -1,9 +1,10 @@
 package com.flipkart.service;
 
-public interface StudentInterface {
-	String requestCatalog();
-	public void addCourse(int course_id,int user_id);
-	public void dropCourse(int course_id,int user_id);
+public interface StudentInterface extends ServiceInterface{
+	public void addCourse(int courseId,int userId);
+	public void dropCourse(int courseId,int userId);
 	public void payBill();
-
+	public void register(int userId,int modeId) ;
+	public void viewReportCard();
+	public String viewEnrolledCourses(int userId);
 }

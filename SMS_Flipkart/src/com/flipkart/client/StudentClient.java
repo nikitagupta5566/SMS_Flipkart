@@ -23,7 +23,7 @@ public class StudentClient {
 	    logger.info("|  2. Add Course            |");
 	    logger.info("|  3. Drop Course           |");
 	    logger.info("|  4. Regiser               |");
-	    logger.info("|  5. Pay Bill              |");
+	    logger.info("|  5. Update Profile        |");
 	    logger.info("|  6. View Enrolled Courses |");
 	    logger.info("|  7. View Report Card      |");
 	    logger.info("|  8. Exit                  |");
@@ -35,7 +35,7 @@ public class StudentClient {
 		StudentClient.showMenu();
 		
 		StudentInterface studentOperation = new StudentOperation();
-		int course_id;
+		int courseId;
 		
 		while(true)
 		{
@@ -50,13 +50,13 @@ public class StudentClient {
 					break;
 				case 2:
 					logger.info("Enter course_id:");
-					course_id = sc.nextInt();
-					studentOperation.addCourse(course_id,user.getId());
+					courseId = sc.nextInt();
+					studentOperation.addCourse(courseId,user.getId());
 					break;
 				case 3:
 					logger.info("Enter course_id:");
-					course_id = sc.nextInt();
-					studentOperation.dropCourse(course_id,user.getId());
+					courseId = sc.nextInt();
+					studentOperation.dropCourse(courseId,user.getId());
 					break;
 				case 4:
 					logger.info("Note: After completing registration, you would not be able to add/drop courses");
@@ -81,8 +81,6 @@ public class StudentClient {
 					break;
 				case 8:
 					logger.info(DateAndTime.getCurrentDate() + "  " + DateAndTime.getCurrentTime() + " " + DateAndTime.getDayOfWeek() + ": Successfully logged out" );
-					
-					
 			}
 		}
 	}

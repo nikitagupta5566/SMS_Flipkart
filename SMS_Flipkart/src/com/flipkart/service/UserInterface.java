@@ -4,5 +4,5 @@ import com.flipkart.bean.User;
 import com.flipkart.exception.LoginException;
 
 public interface UserInterface {
-	public String login(User user) throws LoginException;
+	public void login(User user) throws LoginException;
 }

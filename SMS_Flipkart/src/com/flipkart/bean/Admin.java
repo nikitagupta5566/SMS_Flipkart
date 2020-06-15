@@ -1,5 +1,9 @@
 package com.flipkart.bean;
 
-public class Admin {
+import java.time.LocalDate;
 
+public class Admin extends User{
+	String gender;
+	String name;
+	LocalDate dateOfBirth;
 }

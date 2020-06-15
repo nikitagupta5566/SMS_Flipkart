@@ -47,7 +47,7 @@ public class AdminClient {
 				case 1:
 					logger.info("Enter type of user to display: student, professor, admin");
 					String typeOfUser = sc.next();
-
+					
 					logger.info(admin_operation.viewAllUsers(typeOfUser));
 					break;
 				case 2:
@@ -57,10 +57,10 @@ public class AdminClient {
 					break;
 				case 3:
 					User new_user = new User();
-					logger.info("Enter Username, UserPassword and UserRole and Gender");
+					logger.info("Enter Username, UserPassword and UserRoleId and Gender");
 					new_user.setUsername(sc.next());
 					new_user.setPassword(sc.next());
-					new_user.setRole(sc.next());
+					new_user.setRoleId(sc.nextInt());
 					new_user.setGender(sc.next());
 					
 					admin_operation.createUser(new_user);

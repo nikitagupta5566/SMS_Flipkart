@@ -20,6 +20,7 @@ public class CatalogDaoImpl implements CatalogDao{
 	Connection conn = null;
 	PreparedStatement stmt = null;
 	
+	// Fetch complete list of courses
 	public List<Course> fetchCatalog()
 	{
 		conn = DBUtil.getConnection();
@@ -30,16 +31,15 @@ public class CatalogDaoImpl implements CatalogDao{
 			stmt = conn.prepareStatement(SQLConstantQueries.SELECT_ALL_COURSES);
 			ResultSet rs = stmt.executeQuery();
 			
-			
 			while(rs.next())
 			{
 				course = new Course();
 				course.setCourseid(rs.getInt("id"));
 				course.setCoursename(rs.getString("name"));
 				course.setCoursedescription(rs.getString("description"));
+				course.setPrice(rs.getFloat("price"));
 				course_list.add(course);
-			}
-			
+			}	
 		}
 		catch(SQLException e)
 		{

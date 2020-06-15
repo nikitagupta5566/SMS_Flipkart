@@ -33,7 +33,7 @@ public class UserClient {
 		
 		String username = null;
 		String password=null;
-		String role=null;
+		int roleId=-1;
 		User user=null;
 		
 		System.out.println("hello");
@@ -52,7 +52,7 @@ public class UserClient {
 				user.setPassword(password);
 				user.setUsername(username);
 				
-				role = userOperation.login(user);
+				userOperation.login(user);
 				break;
 			}
 			catch(LoginException e)
@@ -62,20 +62,19 @@ public class UserClient {
 		}
 		
 		
-		
 		logger.info(DateAndTime.getCurrentDate() + "  " + DateAndTime.getCurrentTime() + " " + DateAndTime.getDayOfWeek() + ": Successfully logged in as " + username);
 		
-		if(role.equals("admin"))
+		if(user.getRoleId() == 1)
 		{
 			AdminClient adminClient = new AdminClient();
 			adminClient.main();
 		}
-		else if(role.equals("student"))
+		else if(user.getRoleId() == 2)
 		{
 			StudentClient studentClient = new StudentClient();
 			studentClient.main(user);
 		}
-		else if(role.equals("professor"))
+		else if(user.getRoleId() == 3)
 		{
 			ProfessorClient professorClient = new ProfessorClient();
 			professorClient.main(user);

@@ -11,4 +11,5 @@ public interface StudentCourseDao {
 	public List<User> getEnrolledStudents(int courseId);
 	public void submitGrades(int courseId, String username, String grade);
 	public List<Course> getEnrolledCourses(int userId);
+	public void generateReportCard(int userId);
 }

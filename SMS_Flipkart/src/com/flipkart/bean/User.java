@@ -2,11 +2,22 @@ package com.flipkart.bean;
 
 public class User {
 	
-	String role;
+	int roleId;
+	
 	String username;
 	String password;
 	int id;
+	
 	String gender;
+	
+	public User()
+	{
+		roleId = -1;
+		id = -1;
+		gender = null;
+		username = null;
+		password = null;
+	}
 	
 	public String getGender() {
 		return gender;
@@ -21,12 +32,14 @@ public class User {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getRole() {
-		return role;
+	
+	public int getRoleId() {
+		return roleId;
 	}
-	public void setRole(String role) {
-		this.role = role;
+	public void setRoleId(int roleId) {
+		this.roleId = roleId;
 	}
+	
 	public String getUsername() {
 		return username;
 	}
@@ -39,9 +52,6 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	
-	
 	
 
 }

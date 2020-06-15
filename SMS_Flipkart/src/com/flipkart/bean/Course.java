@@ -4,7 +4,14 @@ public class Course {
 	String coursename;
 	int courseid;
 	String coursedescription;
+	Float price;
 	
+	public Float getPrice() {
+		return price;
+	}
+	public void setPrice(Float price) {
+		this.price = price;
+	}
 	public String getCoursename() {
 		return coursename;
 	}

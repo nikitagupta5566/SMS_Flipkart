@@ -24,6 +24,7 @@ public class StudentCourseDaoImpl implements StudentCourseDao{
 	// Adds a course to the student course list
 		public void addCourse(int course_id,int user_id)
 		{
+			logger.info("hi");
 			Connection conn = DBUtil.getConnection();
 			PreparedStatement stmt = null;
 			
@@ -170,5 +171,36 @@ public class StudentCourseDaoImpl implements StudentCourseDao{
 				logger.error(e.getMessage());
 			}
 			return courseList;
+		}
+
+		@Override
+		public void generateReportCard(int userId) {
+			// TODO Auto-generated method stub
+			Connection conn = DBUtil.getConnection();
+			PreparedStatement stmt = null;
+			
+			try
+			{
+				stmt = conn.prepareStatement(SQLConstantQueries.GENERATE_REPORT_CARD);
+				stmt.setInt(1,userId);
+				
+				ResultSet rs = stmt.executeQuery();
+				
+				while(rs.next())
+				{
+					
+				}
+				
+				
+			}
+			catch(SQLException e)
+			{
+				logger.error(e.getMessage());
+			}
+			catch(Exception e)
+			{
+				logger.error(e.getMessage());
+			}
+			
 		}
 }

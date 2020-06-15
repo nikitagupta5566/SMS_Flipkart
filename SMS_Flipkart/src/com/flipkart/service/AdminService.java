@@ -14,12 +14,15 @@ import com.flipkart.dao.CatalogDao;
 import com.flipkart.dao.CatalogDaoImpl;
 import com.flipkart.dao.CourseDao;
 import com.flipkart.dao.CourseDaoImpl;
+import com.flipkart.dao.RoleDao;
+import com.flipkart.dao.RoleDaoImpl;
 import com.flipkart.dao.UserDao;
 import com.flipkart.dao.UserDaoImpl;
 
 public class AdminService implements AdminInterface{
 	UserDao userdao = new UserDaoImpl();
 	CourseDao coursedao = new CourseDaoImpl();
+	RoleDao roleDao = new RoleDaoImpl();
 	String s = "";
 	private static Logger logger = Logger.getLogger(UserClient.class);
 	
@@ -29,10 +32,11 @@ public class AdminService implements AdminInterface{
 		// TODO Auto-generated method stub 
 		List<User>userList = userdao.fetchUsers();
 		
+		int roleId = roleDao.getRoleId(typeOfUser);
 		String userList1 = "\n=========================" + String.format("%-15s", "\nUserID")
 				+ String.format("%-15s", "Username") + "\n=========================" + 
 				userList.stream().
-				filter(user -> user.getRole().equals(typeOfUser)).
+				filter(user -> user.getRoleId() == roleId).
 				flatMap(user -> Stream.of(
 						String.format("\n%-15s", user.getId()),user.getGender().equals("male") ? String.format("%-15s", "Mr.".concat(user.getUsername())): String.format("%-15s", "Miss.".concat( user.getUsername() )))).
 				collect(Collectors.joining(""));

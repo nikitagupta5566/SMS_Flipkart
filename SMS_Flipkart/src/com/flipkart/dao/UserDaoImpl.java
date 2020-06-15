@@ -19,9 +19,8 @@ public class UserDaoImpl implements UserDao {
 	PreparedStatement stmt = null;
 	private static Logger logger = Logger.getLogger(UserClient.class);
 	
-	public String login(User user)
+	public void login(User user)
 	{
-		String role = null;
 		conn = DBUtil.getConnection();
 		try
 		{
@@ -35,11 +34,8 @@ public class UserDaoImpl implements UserDao {
 			
 			if(rs.next())
 			{
-				user.setRole(rs.getString("role"));
+				user.setRoleId(rs.getInt("roleId"));
 				user.setId(rs.getInt("id"));
-				
-				role = rs.getString("role");
-				logger.debug(role);
 			}
 			
 		}
@@ -48,7 +44,6 @@ public class UserDaoImpl implements UserDao {
 			logger.error(e.getMessage());
 		}
 	
-		return role;
 	}
 
 	@Override
@@ -60,7 +55,7 @@ public class UserDaoImpl implements UserDao {
 			
 			stmt.setString(1,user.getUsername());
 			stmt.setString(2, user.getPassword());
-			stmt.setString(3, user.getRole());
+			stmt.setInt(3, user.getRoleId());
 			stmt.setString(4, user.getGender());
 			int rows = stmt.executeUpdate();
 			logger.debug(rows);
@@ -105,7 +100,7 @@ public class UserDaoImpl implements UserDao {
 			while(rs.next())
 			{
 				user = new User();
-				user.setRole(rs.getString("role"));
+				user.setRoleId(rs.getInt("id"));
 				user.setGender(rs.getString("gender"));
 				user.setUsername(rs.getString("username"));
 				user.setPassword(rs.getString("password"));
