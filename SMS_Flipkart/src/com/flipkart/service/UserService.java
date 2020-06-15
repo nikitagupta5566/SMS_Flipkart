@@ -5,7 +5,7 @@ import com.flipkart.dao.UserDao;
 import com.flipkart.dao.UserDaoImpl;
 import com.flipkart.exception.LoginException;
 
-public class UserOperation implements UserInterface{
+public class UserService implements UserInterface{
 
 	UserDao userdao = new UserDaoImpl();
 	

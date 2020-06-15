@@ -67,7 +67,7 @@ public class UserDaoImpl implements UserDao {
 		}
 		catch(SQLException e)
 		{
-//			return e.getMessage();
+			logger.error(e.getMessage());
 		}
 	}
 	
@@ -109,6 +109,7 @@ public class UserDaoImpl implements UserDao {
 				user.setGender(rs.getString("gender"));
 				user.setUsername(rs.getString("username"));
 				user.setPassword(rs.getString("password"));
+				user.setId(rs.getInt("id"));
 				userList.add(user);
 			}
 		}
