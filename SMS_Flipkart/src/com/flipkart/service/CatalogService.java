@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.flipkart.bean.Course;
 
-public class CatalogOperation implements CatalogInterface{
+public class CatalogService implements CatalogInterface{
 
 	@Override
 	public List<Course> requestCatalog() {

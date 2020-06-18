@@ -21,6 +21,11 @@ import com.flipkart.exception.CourseNotAvailableException;
 public class ProfessorService implements ProfessorInterface{
 	private static Logger logger = Logger.getLogger(UserClient.class);
 	StudentCourseDao studentCourseDao = new StudentCourseDaoImpl();
+	ProfessorCourseDao professorCourseDao = new ProfessorCourseDaoImpl();
+	
+	String s = "";
+	
+	
 	// Submit grades for a student of a particular course
 	@Override
 	public void submitGrades(int courseId, String username,String grade) {
@@ -49,16 +54,23 @@ public class ProfessorService implements ProfessorInterface{
 	
 	// View list of enrolled students in the courses taught by professor
 	@Override
-	public void viewEnrolledStudents(int courseId,int userId) {
+	public List<User> viewEnrolledStudents(int courseId,int userId) {
 		// TODO Auto-generated method stub
+		List<User> userList = null;
 		
-		ProfessorCourseDao professorCourseDao = new ProfessorCourseDaoImpl();
 		if(professorCourseDao.verifyProfessor(courseId,userId))
 		{
 			RegistrationDao registrationDao = new RegistrationDaoImpl(); 
-			List<User> userList = studentCourseDao.getEnrolledStudents(courseId);
-			
-			userList.forEach(user -> {logger.info(user.getUsername());});
+			userList = studentCourseDao.getEnrolledStudents(courseId);	
 		}
+		
+		return userList;
+	}
+	
+	// View list of courses taught by the professor
+	public List<Course> viewAllottedCourses(int userId)
+	{
+		List<Course>allotedCourseList = professorCourseDao.viewAllottedCourses(userId);
+		return allotedCourseList;
 	}
 }

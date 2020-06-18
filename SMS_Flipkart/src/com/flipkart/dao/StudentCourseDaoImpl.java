@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -22,18 +23,18 @@ public class StudentCourseDaoImpl implements StudentCourseDao{
 	private static Logger logger = Logger.getLogger(UserClient.class);
 	
 	// Adds a course to the student course list
-		public void addCourse(int course_id,int user_id)
+		public void addCourse(int courseId,int userId)
 		{
-			logger.info("hi");
 			Connection conn = DBUtil.getConnection();
 			PreparedStatement stmt = null;
 			
 			try
 			{
 				stmt = conn.prepareStatement(SQLConstantQueries.ADD_COURSE);
-				stmt.setInt(1,user_id);
-				stmt.setInt(2,course_id);
+				stmt.setInt(1,userId);
+				stmt.setInt(2,courseId);
 				stmt.setString(3,DateAndTime.getCurrentDateTime().format(formatter));
+				logger.debug(userId + " " + courseId);
 				int rows = stmt.executeUpdate();
 				logger.debug(rows);
 				
@@ -70,8 +71,8 @@ public class StudentCourseDaoImpl implements StudentCourseDao{
 			
 		}
 		
-		// Get a list of enrolled students in a course
 		
+		// Get a list of enrolled students in a course
 		public List<User> getEnrolledStudents(int courseId) {
 			// TODO Auto-generated method stub
 			Connection conn = DBUtil.getConnection();
@@ -89,8 +90,7 @@ public class StudentCourseDaoImpl implements StudentCourseDao{
 				{
 					user = new User();
 					user.setUsername(rs.getString("username"));
-					user.setGender(rs.getString("gender"));
-					user.setId(rs.getInt("id"));
+					user.setId(rs.getInt("userId"));
 					userList.add(user);
 				}
 			}
@@ -155,8 +155,8 @@ public class StudentCourseDaoImpl implements StudentCourseDao{
 				while(rs.next())
 				{
 					course = new Course();
-					course.setCourseid(rs.getInt("courseid"));
-					course.setCoursename(rs.getString("name"));
+					course.setCourseId(rs.getInt("courseid"));
+					course.setCourseName(rs.getString("name"));
 					course.setPrice(rs.getFloat("price"));
 					courseList.add(course);
 				}
@@ -172,23 +172,61 @@ public class StudentCourseDaoImpl implements StudentCourseDao{
 			}
 			return courseList;
 		}
-
+		
+		// generate report card of a student
 		@Override
-		public void generateReportCard(int userId) {
+		public HashMap<Course,String> generateReportCard(int userId) {
 			// TODO Auto-generated method stub
 			Connection conn = DBUtil.getConnection();
 			PreparedStatement stmt = null;
+			HashMap<Course,String> gradeList = new HashMap<Course,String>();
 			
 			try
 			{
 				stmt = conn.prepareStatement(SQLConstantQueries.GENERATE_REPORT_CARD);
 				stmt.setInt(1,userId);
-				
+				Course course;
 				ResultSet rs = stmt.executeQuery();
 				
 				while(rs.next())
 				{
+					course = new Course();
+					course.setCourseId(rs.getInt("courseId"));
+					course.setCourseName(rs.getString("name"));
+					gradeList.put(course,rs.getString("grade"));
 					
+				}
+				
+			}
+			catch(SQLException e)
+			{
+				logger.error(e.getMessage());
+			}
+			catch(Exception e)
+			{
+				logger.error(e.getMessage());
+			}
+			
+			return gradeList;
+		}
+		
+		// calculates total fees at the time of registration by a student
+		public float calculateFee(int userId)
+		{
+			float amount = 0;
+			Connection conn = DBUtil.getConnection();
+			PreparedStatement stmt = null;
+			
+			try
+			{
+				stmt = conn.prepareStatement(SQLConstantQueries.CALCULATE_BILL);
+				stmt.setInt(1,userId);
+				
+				ResultSet rs = stmt.executeQuery();
+				
+				if(rs.next())
+				{
+					amount = rs.getFloat("amount");
 				}
 				
 				
@@ -202,5 +240,6 @@ public class StudentCourseDaoImpl implements StudentCourseDao{
 				logger.error(e.getMessage());
 			}
 			
+			return amount;
 		}
 }

@@ -1,11 +1,13 @@
 package com.flipkart.service;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
 import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Course;
+import com.flipkart.bean.Registration;
 import com.flipkart.client.UserClient;
 import com.flipkart.dao.CatalogDao;
 import com.flipkart.dao.CatalogDaoImpl;
@@ -37,7 +39,7 @@ public class StudentOperation implements StudentInterface{
 		
 	}
 	
-	// drop a course from main course
+	// drop a course
 	@Override
 	public void dropCourse(int courseId, int userId) {
 		try
@@ -56,9 +58,20 @@ public class StudentOperation implements StudentInterface{
 	
 	// Pay bill for all the registered courses  
 	@Override
-	public void payBill() {
+	public float getBill(int userId) {
+		float amount = 0;
 		// TODO Auto-generated method stub
+		try
+		{
+			registrationDao.checkRegistration(userId);
+			amount = studentCourseDao.calculateFee(userId);
+		}
+		catch(RegistrationCompletedException e)
+		{
+			logger.error(e.getMessage());
+		}
 		
+		return amount;
 		
 	}
 	
@@ -66,22 +79,18 @@ public class StudentOperation implements StudentInterface{
 	@Override
 	public void register(int userId,int modeId) {
 		// TODO Auto-generated method stub
-		try
-		{
-			registrationDao.checkRegistration(userId);
-			registrationDao.register(userId,modeId);
-		}
-		catch(RegistrationCompletedException e)
-		{
-			logger.error(e.getMessage());
-		}
+		
+		registrationDao.register(userId,modeId);
 		
 	}
 
 	
 	// View Report Card after semester completion
 	@Override
-	public void viewReportCard() {
+	public HashMap<Course,String> viewReportCard(int userId) {
+		HashMap<Course,String> gradeList = studentCourseDao.generateReportCard(userId);
+		
+		return gradeList;
 		
 		// TODO Auto-generated method stub
 		
@@ -89,24 +98,20 @@ public class StudentOperation implements StudentInterface{
 
 	// View list of enrolled courses
 	@Override
-	public String viewEnrolledCourses(int userId) {
+	public List<Course> viewEnrolledCourses(int userId) {
 		// TODO Auto-generated method stub
 		List<Course> courseList = studentCourseDao.getEnrolledCourses(userId);
-		s = "\n===============================================" 
-				+ "\n" 
-				+ String.format("%-20s", "Id") 
-				+ String.format("%-20s","Name")
-				+ String.format("%-20s", "Price") 
-				+ "\n===============================================";
-		
-		courseList.forEach(course -> {
-			s = s + "\n" + String.format("%-20s", course.getCourseid()) 
-			+ String.format("%-20s", course.getCoursename())
-			+ String.format("%-20s", course.getPrice());
-		});
-		
-		return s;
+		return courseList;
 	}
+	
+	public Registration getRegistrationDetails(int userId)
+	{
+		Registration registration = new Registration();
+		registration.setUserId(userId);
+		return registrationDao.getRegistrationDetails(registration);
+	}
+
+	
 }
 
 

@@ -2,9 +2,11 @@ package com.flipkart.dao;
 
 import java.sql.Blob;
 import java.sql.Connection;
+import java.util.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +14,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Course;
+import com.flipkart.bean.Registration;
 import com.flipkart.bean.User;
 import com.flipkart.client.UserClient;
 import com.flipkart.constant.SQLConstantQueries;
@@ -56,9 +59,12 @@ public class RegistrationDaoImpl implements RegistrationDao{
 		
 		try
 		{
+			Date date = new Date();
+			
 			stmt = conn.prepareStatement(SQLConstantQueries.REGISTER_COURSE);
 			stmt.setInt(1,userId);
-			stmt.setString(2,DateAndTime.getCurrentDateTime().format(formatter));
+//			stmt.setTimestamp(2,DateAndTime.getCurrentDateTime().format(formatter));
+			stmt.setTimestamp(2, new Timestamp(date.getTime()));
 			stmt.setInt(3, paymentId);
 			int rows = stmt.executeUpdate();
 			logger.debug(rows);
@@ -73,6 +79,36 @@ public class RegistrationDaoImpl implements RegistrationDao{
 		}
 	}
 	
+	
+	public Registration getRegistrationDetails(Registration registration)
+	{
+		Connection conn = DBUtil.getConnection();
+		PreparedStatement stmt = null;
+		
+		try
+		{
+			stmt = conn.prepareStatement(SQLConstantQueries.GET_REGISTRATION_DETAILS);
+			stmt.setInt(1,registration.getUserId());
+			
+			ResultSet rs = stmt.executeQuery();
+			
+			while(rs.next())
+			{
+				registration.setRegId(rs.getInt("regId"));
+				registration.setPaymentId(rs.getInt("paymentId"));
+				registration.setRegistrationDate(rs.getTimestamp("timestamp"));
+			}
+		}
+		catch(SQLException e)
+		{
+			logger.error(e.getMessage());
+		}
+		catch(Exception e)
+		{
+			logger.error(e.getMessage());
+		}
+		return registration;
+	}
 
 	
 }

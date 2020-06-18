@@ -20,7 +20,7 @@ public class CatalogDaoImpl implements CatalogDao{
 	Connection conn = null;
 	PreparedStatement stmt = null;
 	
-	// Fetch complete list of courses
+	// A function that returns all the courses along with details like price and description of the course.
 	public List<Course> fetchCatalog()
 	{
 		conn = DBUtil.getConnection();
@@ -34,9 +34,9 @@ public class CatalogDaoImpl implements CatalogDao{
 			while(rs.next())
 			{
 				course = new Course();
-				course.setCourseid(rs.getInt("id"));
-				course.setCoursename(rs.getString("name"));
-				course.setCoursedescription(rs.getString("description"));
+				course.setCourseId(rs.getInt("courseId"));
+				course.setCourseName(rs.getString("name"));
+				course.setCourseDescription(rs.getString("description"));
 				course.setPrice(rs.getFloat("price"));
 				course_list.add(course);
 			}	

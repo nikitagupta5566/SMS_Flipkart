@@ -1,38 +1,46 @@
 package com.flipkart.bean;
 
-import java.util.Date;
-import java.time.LocalDate;
+import java.sql.Timestamp;
+
 
 public class Registration {
-	LocalDate registration_date;
-	int registration_id;
-	int student_id;
-	int course_id;
+	Timestamp registrationDate;
+	int regId;
+	int userId;
+	int paymentId;
 	
-	public LocalDate getRegistration_date() {
-		return registration_date;
+	public Registration()
+	{
+		this.regId = -1;
+		this.userId = -1;
+		this.registrationDate = null;
+		this.paymentId = -1;
 	}
-	public void setRegistration_date(LocalDate registration_date) {
-		this.registration_date = registration_date;
+	public Timestamp getRegistrationDate() {
+		return registrationDate;
 	}
-	public int getRegistration_id() {
-		return registration_id;
+	public void setRegistrationDate(Timestamp registrationDate) {
+		this.registrationDate = registrationDate;
 	}
-	public void setRegistration_id(int registration_id) {
-		this.registration_id = registration_id;
+	public int getRegId() {
+		return regId;
 	}
-	public int getStudent_id() {
-		return student_id;
+	public void setRegId(int regId) {
+		this.regId = regId;
 	}
-	public void setStudent_id(int student_id) {
-		this.student_id = student_id;
+	public int getUserId() {
+		return userId;
 	}
-	public int getCourse_id() {
-		return course_id;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
-	public void setCourse_id(int course_id) {
-		this.course_id = course_id;
+	public int getPaymentId() {
+		return paymentId;
 	}
+	public void setPaymentId(int paymentId) {
+		this.paymentId = paymentId;
+	}
+	
 	
 	
 }

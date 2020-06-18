@@ -26,7 +26,6 @@ public class UserClient {
 	Scanner sc = new Scanner(System.in);
 	
 	public static void main(String[] args)  {
-//		logger.setUseParentHandlers(false);
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		UserInterface userOperation = new UserService();
@@ -36,7 +35,6 @@ public class UserClient {
 		int roleId=-1;
 		User user=null;
 		
-		System.out.println("hello");
 		logger.info("***********Welcome To Student Management System***********");
 		while(true)
 		{
@@ -67,7 +65,7 @@ public class UserClient {
 		if(user.getRoleId() == 1)
 		{
 			AdminClient adminClient = new AdminClient();
-			adminClient.main();
+			adminClient.main(user);
 		}
 		else if(user.getRoleId() == 2)
 		{

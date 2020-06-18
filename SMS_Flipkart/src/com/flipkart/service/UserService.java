@@ -9,6 +9,7 @@ public class UserService implements UserInterface{
 
 	UserDao userdao = new UserDaoImpl();
 	
+	// Verify login credentials of user
 	public void login(User user) throws LoginException {
 			
 			int roleId;
@@ -18,8 +19,12 @@ public class UserService implements UserInterface{
 			if(roleId == -1)
 			{
 				throw new LoginException();
-			}
-			
+			}	
 	}
+	
+//	public convertUser(User user)
+//	{
+//		
+//	}
 
 }

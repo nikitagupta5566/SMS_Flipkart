@@ -1,9 +1,9 @@
 package com.flipkart.bean;
 
 public class Course {
-	String coursename;
-	int courseid;
-	String coursedescription;
+	String courseName;
+	int courseId;
+	String courseDescription;
 	Float price;
 	
 	public Float getPrice() {
@@ -12,22 +12,22 @@ public class Course {
 	public void setPrice(Float price) {
 		this.price = price;
 	}
-	public String getCoursename() {
-		return coursename;
+	public String getCourseName() {
+		return courseName;
 	}
-	public void setCoursename(String coursename) {
-		this.coursename = coursename;
+	public void setCourseName(String coursename) {
+		this.courseName = coursename;
 	}
-	public int getCourseid() {
-		return courseid;
+	public int getCourseId() {
+		return courseId;
 	}
-	public void setCourseid(int courseid) {
-		this.courseid = courseid;
+	public void setCourseId(int courseid) {
+		this.courseId = courseid;
 	}
-	public String getCoursedescription() {
-		return coursedescription;
+	public String getCourseDescription() {
+		return courseDescription;
 	}
-	public void setCoursedescription(String coursedescription) {
-		this.coursedescription = coursedescription;
+	public void setCourseDescription(String courseDescription) {
+		this.courseDescription = courseDescription;
 	}
 }

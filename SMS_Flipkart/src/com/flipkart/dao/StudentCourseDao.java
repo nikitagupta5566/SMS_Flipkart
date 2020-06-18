@@ -1,5 +1,6 @@
 package com.flipkart.dao;
 
+import java.util.HashMap;
 import java.util.List;
 
 import com.flipkart.bean.Course;
@@ -11,5 +12,6 @@ public interface StudentCourseDao {
 	public List<User> getEnrolledStudents(int courseId);
 	public void submitGrades(int courseId, String username, String grade);
 	public List<Course> getEnrolledCourses(int userId);
-	public void generateReportCard(int userId);
+	public HashMap<Course, String> generateReportCard(int userId);
+	public float calculateFee(int userId);
 }
