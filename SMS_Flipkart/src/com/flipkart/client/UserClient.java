@@ -32,7 +32,7 @@ public class UserClient {
 		
 		String username = null;
 		String password=null;
-		int roleId=-1;
+		
 		User user=null;
 		
 		logger.info("***********Welcome To Student Management System***********");

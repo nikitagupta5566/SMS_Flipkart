@@ -173,8 +173,6 @@ public class AdminClient implements RootClient{
 	
 	void printReportCard(HashMap<Course,String> gradeList)
 	{
-		logger.info(gradeList.size());
-		logger.info("rerpo");
 		s = "\n===============================================" 
 				+ "\n" 
 				+ String.format("%-20s", "CourseId:") 
