@@ -33,4 +33,8 @@ public class SQLConstantQueries {
 	
 	public static final String UPDATE_COURSE = "update course set name = ?,price = ?, description = ? where courseId = ?";
 	public static final String GET_REGISTRATION_DETAILS = "select * from registration where userId = ?";
+	
+	public static final String GET_USER_ROLE = "select name from user join role on role.roleId = user.roleId where username = ?";
+	
+	public static final String GET_NO_OF_ENROLLED_COURSES = "select * from studentCourse where userId = ?";
 }

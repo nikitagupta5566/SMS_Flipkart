@@ -3,12 +3,14 @@ package com.flipkart.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 
 import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Course;
 import com.flipkart.client.UserClient;
 import com.flipkart.constant.SQLConstantQueries;
+import com.flipkart.exception.CourseIdAlreadyTakenException;
 import com.flipkart.service.DateAndTime;
 import com.flipkart.utils.DBUtil;
 
@@ -16,8 +18,7 @@ public class CourseDaoImpl implements CourseDao{
 	private static Logger logger = Logger.getLogger(UserClient.class);
 	
 	// Add a new Course to the list
-	public void createCourse(Course course)
-	{
+	public void createCourse(Course course) throws CourseIdAlreadyTakenException {
 		Connection conn = DBUtil.getConnection();
 		PreparedStatement stmt = null;
 		try
@@ -30,7 +31,11 @@ public class CourseDaoImpl implements CourseDao{
 			stmt.setFloat(4, course.getPrice());
 			stmt.setInt(5, 1);
 			int rows = stmt.executeUpdate();
-			logger.debug(rows);
+			
+		}
+		catch(SQLIntegrityConstraintViolationException e)
+		{
+			throw new CourseIdAlreadyTakenException(course.getCourseId());
 		}
 		catch(SQLException e)
 		{
@@ -43,7 +48,7 @@ public class CourseDaoImpl implements CourseDao{
 	}
 	
 	// Delete a course
-	public void deleteCourse(int course_id)
+	public void deleteCourse(int course_id) throws SQLException,Exception
 	{
 		Connection conn = DBUtil.getConnection();
 		PreparedStatement stmt = null;
@@ -53,15 +58,14 @@ public class CourseDaoImpl implements CourseDao{
 			stmt.setInt(1,course_id);
 		
 			int rows = stmt.executeUpdate();
-			logger.debug(rows);
 		}
 		catch(SQLException e)
 		{
-			logger.error(e.getMessage());
+			throw e;
 		}
 		catch(Exception e)
 		{
-			logger.error(e.getMessage());
+			throw e;
 		}
 	}
 	

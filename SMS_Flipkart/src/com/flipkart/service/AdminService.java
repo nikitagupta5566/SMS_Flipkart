@@ -1,5 +1,6 @@
 package com.flipkart.service;
 
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -30,6 +31,9 @@ import com.flipkart.dao.StudentDao;
 import com.flipkart.dao.StudentDaoImpl;
 import com.flipkart.dao.UserDao;
 import com.flipkart.dao.UserDaoImpl;
+import com.flipkart.exception.CourseIdAlreadyTakenException;
+import com.flipkart.exception.UserDoesNotExistException;
+import com.flipkart.exception.UsernameAlreadyTakenException;
 
 public class AdminService implements AdminInterface{
 	UserDao userDao = new UserDaoImpl();
@@ -89,7 +93,7 @@ public class AdminService implements AdminInterface{
 	
 	// Add a new Course to the catalog
 	@Override
-	public void createCourse(Course course) {
+	public void createCourse(Course course) throws CourseIdAlreadyTakenException{
 		courseDao.createCourse(course);
 		// TODO Auto-generated method stub
 		
@@ -97,37 +101,31 @@ public class AdminService implements AdminInterface{
 	
 	// Delete a course from catalog
 	@Override
-	public void deleteCourse(int course_id) {
+	public void deleteCourse(int course_id) throws SQLException, Exception {
 		courseDao.deleteCourse(course_id);
 	}
 
 	// Add a new user
 	@Override
-	public void createUser(User user,String role) {
+	public void createUser(User user,String role) throws UsernameAlreadyTakenException{
 		userDao.createUser(user,role);
 	}
 	
 	// Create student credentials and add student details
-	public void createStudent(User user,Student student)
+	public void updateStudentDetails(Student student)
 	{
-		userDao.createUser(user,"student");
-		student.setUsername(user.getUsername());
 		studentDao.createStudent(student);
 	}
 	
 	// Create professor credentials and add professor details
-	public void createProfessor(User user,Professor professor)
+	public void updateProfessorDetails(Professor professor)
 	{
-		userDao.createUser(user, "professor");
-		professor.setUsername(user.getUsername());
 		professorDao.createProfessor(professor);
 	}
 	
 	// Create admin credentials and add admin details
-	public void createAdmin(User user,Admin admin)
+	public void updateAdminDetails(Admin admin)
 	{
-		userDao.createUser(user, "admin");
-		admin.setUsername(user.getUsername());
 		adminDao.createAdmin(admin);
 	}
 
@@ -142,10 +140,9 @@ public class AdminService implements AdminInterface{
 
 	// Delete a user from the system
 	@Override
-	public void deleteUser(String username) {
+	public void deleteUser(String username) throws UserDoesNotExistException,SQLException{
 		// TODO Auto-generated method stub
 		userDao.deleteUser(username);
-		
 	}
 
 	@Override
@@ -174,17 +171,15 @@ public class AdminService implements AdminInterface{
 		courseDao.updateCourse(course);
 		
 	}
+	
+	public String getUserRole(String username) throws UserDoesNotExistException
+	{
+		// get role of user by username
+		return userDao.getUserRole(username);
+	}
 
-
-	
-
-	
-	
-
-	
-
-	
-	
-	
 
 }
+
+
+

@@ -16,10 +16,10 @@ public class ProfessorClient implements RootClient{
 	Scanner sc = new Scanner(System.in);
 	ProfessorInterface professorOperation = new ProfessorService();
 	String s = "";
-	// show menu for professor
+	
 	public void showMenu()
 	{
-//		logger.info("1. View Courses\n2. Select Course\n3. Record Grades\n4. View Student Details\n5. Exit");
+		/** show menu for professor **/
 		
 		logger.info("============================");
 	    logger.info("|      PROFESSOR MENU      |");
@@ -39,33 +39,41 @@ public class ProfessorClient implements RootClient{
 		
 		while(true)
 		{
-			logger.info("Enter Choice");
-			int choice = sc.nextInt();
-			
-			switch(choice)
+			try
 			{
-				case 1:
-					logger.info("******** List of Courses ********");
-					printCourses(professorOperation.viewAllCourses());
-					break;
-				case 2:
-					logger.info("Enter Course Id of the course you want to teach: ");
-					professorOperation.selectCourse(user.getId(),sc.nextInt());
-					break;
-				case 3:
-					logger.info("Enter Course Id, username of student and grade of student");
-					professorOperation.submitGrades(sc.nextInt(),sc.next(),sc.next());
-					break;
-				case 4:
-					logger.info("Enter Course Id:");
-					printEnrolledStudents(professorOperation.viewEnrolledStudents(sc.nextInt(),user.getId()));
-					break;
-				case 5:
-					printAllottedCourses(professorOperation.viewAllottedCourses(user.getId()));
-					break;
-				case 6:
-					logger.info("Enter Course Id: ");
-					logger.info(DateAndTime.getCurrentDate() + "  " + DateAndTime.getCurrentTime() + " " + DateAndTime.getDayOfWeek() + ": Successfully logged out" );	
+				logger.info("Enter Choice");
+				int choice = sc.nextInt();
+				
+				switch(choice)
+				{
+					case 1:
+						logger.info("******** List of Courses ********");
+						printCourses(professorOperation.viewAllCourses());
+						break;
+					case 2:
+						logger.info("Enter Course Id of the course you want to teach: ");
+						professorOperation.selectCourse(user.getId(),sc.nextInt());
+						break;
+					case 3:
+						logger.info("Enter Course Id, username of student and grade of student");
+						professorOperation.submitGrades(sc.nextInt(),sc.next(),sc.next());
+						break;
+					case 4:
+						logger.info("Enter Course Id:");
+						printEnrolledStudents(professorOperation.viewEnrolledStudents(sc.nextInt(),user.getId()));
+						break;
+					case 5:
+						printAllottedCourses(professorOperation.viewAllottedCourses(user.getId()));
+						break;
+					case 6:
+						logger.info("Enter Course Id: ");
+						logger.info(DateAndTime.getCurrentDate() + "  " + DateAndTime.getCurrentTime() + " " + DateAndTime.getDayOfWeek() + ": Successfully logged out" );	
+				}
+		
+			}
+			catch(Exception e)
+			{
+				logger.error(e.getMessage());
 			}
 		}
 	}
@@ -73,36 +81,54 @@ public class ProfessorClient implements RootClient{
 	
 	void printEnrolledStudents(List<User> userList)
 	{
-		if(userList == null)
+		// get list of students in course taught by a student
+		try
 		{
-			logger.info("Either no students are enrolled in this course or You dont teach this course!!!!");
-			return;
+			if(userList == null)
+			{
+				logger.info("Either no students are enrolled in this course or You dont teach this course!!!!");
+				return;
+			}
+			
+			s = "\n==========================" + String.format("%-15s", "\nUserID")
+			+ String.format("%-15s", "Username") + "\n==========================" ;
+			
+			userList.forEach(user -> { 
+				s = s + String.format("\n%-15s", user.getId()) + String.format("%-15s", user.getUsername());
+			});
+			
+			logger.info(s);
+		}
+		catch(Exception e)
+		{
+			logger.error(e.getMessage());
 		}
 		
-		s = "\n==========================" + String.format("%-15s", "\nUserID")
-		+ String.format("%-15s", "Username") + "\n==========================" ;
-		
-		userList.forEach(user -> { 
-			s = s + String.format("\n%-15s", user.getId()) + String.format("%-15s", user.getUsername());
-		});
-		
-		logger.info(s);
 	}
 	
 	void printAllottedCourses(List<Course>allotedCourseList)
 	{
-		s = "\n===========================================" 
-				+ "\n" 
-				+ String.format("%-20s", "Id") 
-				+ String.format("%-20s","Name") 
-				+ "\n==========================================";
-		
-		allotedCourseList.forEach(course ->
+		// view list of courses selected by professor to teach
+		try
 		{
-			s = s + "\n" + String.format("%-20s", course.getCourseId()) 
-			+ String.format("%-20s", course.getCourseName());
-		});
+			s = "\n===========================================" 
+					+ "\n" 
+					+ String.format("%-20s", "Id") 
+					+ String.format("%-20s","Name") 
+					+ "\n==========================================";
+			
+			allotedCourseList.forEach(course ->
+			{
+				s = s + "\n" + String.format("%-20s", course.getCourseId()) 
+				+ String.format("%-20s", course.getCourseName());
+			});
+			
+			logger.info(s);
+		}
+		catch(Exception e)
+		{
+			logger.error(e.getMessage());
+		}
 		
-		logger.info(s);
 	}
 }

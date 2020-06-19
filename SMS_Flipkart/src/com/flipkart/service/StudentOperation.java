@@ -8,6 +8,8 @@ import org.apache.log4j.Logger;
 
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Registration;
+import com.flipkart.bean.Student;
+import com.flipkart.bean.User;
 import com.flipkart.client.UserClient;
 import com.flipkart.dao.CatalogDao;
 import com.flipkart.dao.CatalogDaoImpl;
@@ -15,6 +17,12 @@ import com.flipkart.dao.RegistrationDao;
 import com.flipkart.dao.RegistrationDaoImpl;
 import com.flipkart.dao.StudentCourseDao;
 import com.flipkart.dao.StudentCourseDaoImpl;
+import com.flipkart.dao.StudentDao;
+import com.flipkart.dao.StudentDaoImpl;
+import com.flipkart.dao.UserDao;
+import com.flipkart.dao.UserDaoImpl;
+import com.flipkart.exception.CourseIdAlreadyTakenException;
+import com.flipkart.exception.CourseLimitExceedException;
 import com.flipkart.exception.RegistrationCompletedException;
 
 public class StudentOperation implements StudentInterface{
@@ -26,60 +34,35 @@ public class StudentOperation implements StudentInterface{
 	
 	// Add a course to list of main courses
 	@Override
-	public void addCourse(int courseId,int userId) {
-		try
-		{
-			registrationDao.checkRegistration(userId);
-			studentCourseDao.addCourse(courseId,userId);
-		}
-		catch(RegistrationCompletedException e)
-		{
-			logger.error(e.getMessage());
-		}
+	public void addCourse(int courseId,int userId) throws RegistrationCompletedException, CourseIdAlreadyTakenException,CourseLimitExceedException {
+		registrationDao.checkRegistration(userId);
+		studentCourseDao.getNumberOfCourses(userId);
+		studentCourseDao.addCourse(courseId,userId);
 		
 	}
 	
 	// drop a course
 	@Override
-	public void dropCourse(int courseId, int userId) {
-		try
-		{
-			registrationDao.checkRegistration(userId);
-			studentCourseDao.dropCourse(courseId,userId);
-		}
-		catch(RegistrationCompletedException e)
-		{
-			logger.error(e.getMessage());
-		}
-		
-		
-		
+	public void dropCourse(int courseId, int userId) throws RegistrationCompletedException{
+		registrationDao.checkRegistration(userId);
+		studentCourseDao.dropCourse(courseId,userId);	
 	}
 	
 	// Pay bill for all the registered courses  
 	@Override
-	public float getBill(int userId) {
+	public float getBill(int userId) throws RegistrationCompletedException{
 		float amount = 0;
-		// TODO Auto-generated method stub
-		try
-		{
-			registrationDao.checkRegistration(userId);
-			amount = studentCourseDao.calculateFee(userId);
-		}
-		catch(RegistrationCompletedException e)
-		{
-			logger.error(e.getMessage());
-		}
+		
+		registrationDao.checkRegistration(userId);
+		amount = studentCourseDao.calculateFee(userId);
 		
 		return amount;
-		
 	}
 	
 	// Register the courses
 	@Override
 	public void register(int userId,int modeId) {
 		// TODO Auto-generated method stub
-		
 		registrationDao.register(userId,modeId);
 		
 	}
@@ -109,6 +92,13 @@ public class StudentOperation implements StudentInterface{
 		Registration registration = new Registration();
 		registration.setUserId(userId);
 		return registrationDao.getRegistrationDetails(registration);
+	}
+
+
+	public void updateStudentDetails(Student student) {
+		// TODO Auto-generated method stub
+		StudentDao studentDao = new StudentDaoImpl();
+		studentDao.createStudent(student);
 	}
 
 	

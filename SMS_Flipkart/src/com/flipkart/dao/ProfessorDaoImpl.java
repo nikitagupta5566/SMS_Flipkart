@@ -56,28 +56,28 @@ public class ProfessorDaoImpl implements ProfessorDao{
 	}
 	
 	
-	public void createProfessor(String username)
-	{
-		Connection conn = DBUtil.getConnection();
-		PreparedStatement stmt = null;
-		
-		try
-		{
-			stmt = conn.prepareStatement(SQLConstantQueries.CREATE_PROFESSOR);
-			stmt.setString(1, username);
-			
-			int rows = stmt.executeUpdate();
-			logger.debug(rows);
-		}
-		catch(SQLException e)
-		{
-			logger.error(e.getMessage());
-		}
-		catch(Exception e)
-		{
-			logger.error(e.getMessage());
-		}
-	}
+//	public void createProfessor(String username)
+//	{
+//		Connection conn = DBUtil.getConnection();
+//		PreparedStatement stmt = null;
+//		
+//		try
+//		{
+//			stmt = conn.prepareStatement(SQLConstantQueries.CREATE_PROFESSOR);
+//			stmt.setString(1, username);
+//			stmt.setString(, arg1);
+//			int rows = stmt.executeUpdate();
+//			logger.debug(rows);
+//		}
+//		catch(SQLException e)
+//		{
+//			logger.error(e.getMessage());
+//		}
+//		catch(Exception e)
+//		{
+//			logger.error(e.getMessage());
+//		}
+//	}
 	
 	public List<Professor> fetchProfessors()
 	{
@@ -129,7 +129,6 @@ public class ProfessorDaoImpl implements ProfessorDao{
 			stmt.setString(2, professor.getGender());
 			stmt.setDate(3, professor.getDateOfBirth());
 			stmt.setString(4, professor.getUsername());
-			
 			stmt.executeUpdate();
 			
 		}

@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,6 +16,8 @@ import com.flipkart.bean.Course;
 import com.flipkart.bean.User;
 import com.flipkart.client.UserClient;
 import com.flipkart.constant.SQLConstantQueries;
+import com.flipkart.exception.CourseIdAlreadyTakenException;
+import com.flipkart.exception.CourseLimitExceedException;
 import com.flipkart.service.DateAndTime;
 import com.flipkart.utils.DBUtil;
 
@@ -23,7 +26,7 @@ public class StudentCourseDaoImpl implements StudentCourseDao{
 	private static Logger logger = Logger.getLogger(UserClient.class);
 	
 	// Adds a course to the student course list
-		public void addCourse(int courseId,int userId)
+		public void addCourse(int courseId,int userId) throws CourseIdAlreadyTakenException
 		{
 			Connection conn = DBUtil.getConnection();
 			PreparedStatement stmt = null;
@@ -34,10 +37,13 @@ public class StudentCourseDaoImpl implements StudentCourseDao{
 				stmt.setInt(1,userId);
 				stmt.setInt(2,courseId);
 				stmt.setString(3,DateAndTime.getCurrentDateTime().format(formatter));
-				logger.debug(userId + " " + courseId);
-				int rows = stmt.executeUpdate();
-				logger.debug(rows);
 				
+				int rows = stmt.executeUpdate();
+				
+			}
+			catch(SQLIntegrityConstraintViolationException e)
+			{
+				throw new CourseIdAlreadyTakenException(courseId);
 			}
 			catch(SQLException e)
 			{
@@ -241,5 +247,36 @@ public class StudentCourseDaoImpl implements StudentCourseDao{
 			}
 			
 			return amount;
+		}
+
+		@Override
+		public void getNumberOfCourses(int userId) throws CourseLimitExceedException{
+			// TODO Auto-generated method stub
+			
+			Connection conn = DBUtil.getConnection();
+			PreparedStatement stmt = null;
+			try
+			{
+				stmt = conn.prepareStatement(SQLConstantQueries.GET_NO_OF_ENROLLED_COURSES);
+				stmt.setInt(1,userId);
+				
+				ResultSet rs = stmt.executeQuery();
+				
+				if(rs != null)
+				{
+					rs.last();
+					System.out.println(rs.getRow());
+					if(rs.getRow() == 4 )
+						throw new CourseLimitExceedException();
+				}
+				
+				
+			}
+			catch(SQLException e)
+			{
+				logger.error(e.getMessage());
+			}
+			
+			
 		}
 }

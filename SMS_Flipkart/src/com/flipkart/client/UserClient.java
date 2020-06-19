@@ -19,15 +19,80 @@ import com.flipkart.service.StudentOperation;
 import com.flipkart.service.UserInterface;
 import com.flipkart.service.UserService;
 import com.flipkart.exception.LoginException;
+import com.flipkart.exception.UsernameAlreadyTakenException;
+
 
 public class UserClient {
 	private static Logger logger = Logger.getLogger(UserClient.class);
 	
 	Scanner sc = new Scanner(System.in);
 	
+	
+	public void showMenu()
+	{
+		/** show menu to user**/ 
+			logger.info("============================");
+		    logger.info("|        USER MENU         |");
+		    logger.info("============================");
+		    logger.info("|  1. Register             |");
+		    logger.info("|  2. Login                |");
+		    logger.info("|  3. Exit                 |");
+		    logger.info("============================");
+	}
+
+	
 	public static void main(String[] args)  {
 		// TODO Auto-generated method stub
+		UserClient userClient = new UserClient();
+		StudentClient studentClient = new StudentClient();
+		UserService userOperation = new UserService();
+		logger.info("***********Welcome To Student Management System***********");
+
 		Scanner sc = new Scanner(System.in);
+		try
+		{
+			userClient.showMenu();
+			
+			logger.info("Enter your choice:");
+			int choice = sc.nextInt();
+			String username,password;
+			switch(choice)
+			{
+				case 1:
+					User user = new User();
+					logger.info("Enter username");
+					username = sc.next();
+						
+					logger.info("Enter password");
+					password = sc.next();
+
+					user.setUsername(username);
+					user.setPassword(password);
+					userOperation.createUser(user,"student");
+					studentClient.registerStudent(user);
+					break;
+				case 2:
+					userClient.login();
+					break;
+				case 3:
+					return;
+			}
+
+		}
+		catch(UsernameAlreadyTakenException e)
+		{
+			logger.error(e.getMessage());
+		}
+		catch(Exception e)
+		{
+			logger.error(e.getMessage());
+		}
+	}
+
+
+	public void login()
+	{
+		// login function for user
 		UserInterface userOperation = new UserService();
 		
 		String username = null;
@@ -35,50 +100,47 @@ public class UserClient {
 		
 		User user=null;
 		
-		logger.info("***********Welcome To Student Management System***********");
 		while(true)
-		{
-			try
 			{
-				logger.info("Enter username");
-				username = sc.next();
-				
-				logger.info("Enter password");
-				password = sc.next();
-				
-				user = new User();
-				user.setPassword(password);
-				user.setUsername(username);
-				
-				userOperation.login(user);
-				break;
+				try
+				{
+					logger.info("Enter username");
+					username = sc.next();
+					
+					logger.info("Enter password");
+					password = sc.next();
+					
+					user = new User();
+					user.setPassword(password);
+					user.setUsername(username);
+					
+					userOperation.login(user);
+					break;
+				}
+				catch(LoginException e)
+				{
+					logger.error(e.getMessage());
+				}
 			}
-			catch(LoginException e)
+
+			
+			logger.info(DateAndTime.getCurrentDate() + "  " + DateAndTime.getCurrentTime() + " " + DateAndTime.getDayOfWeek() + ": Successfully logged in as " + username);
+			
+			if(user.getRoleId() == 1)
 			{
-				logger.error(e.getMessage());
+				AdminClient adminClient = new AdminClient();
+				adminClient.main(user);
+			}
+			else if(user.getRoleId() == 2)
+			{
+				StudentClient studentClient = new StudentClient();
+				studentClient.main(user);
+			}
+			else if(user.getRoleId() == 3)
+			{
+				ProfessorClient professorClient = new ProfessorClient();
+				professorClient.main(user);
 			}
 		}
-		
-		
-		logger.info(DateAndTime.getCurrentDate() + "  " + DateAndTime.getCurrentTime() + " " + DateAndTime.getDayOfWeek() + ": Successfully logged in as " + username);
-		
-		if(user.getRoleId() == 1)
-		{
-			AdminClient adminClient = new AdminClient();
-			adminClient.main(user);
-		}
-		else if(user.getRoleId() == 2)
-		{
-			StudentClient studentClient = new StudentClient();
-			studentClient.main(user);
-		}
-		else if(user.getRoleId() == 3)
-		{
-			ProfessorClient professorClient = new ProfessorClient();
-			professorClient.main(user);
-		}
-		
-		
-	}
 
 }

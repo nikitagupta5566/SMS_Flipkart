@@ -26,10 +26,10 @@ public class ProfessorService implements ProfessorInterface{
 	String s = "";
 	
 	
-	// Submit grades for a student of a particular course
+	
 	@Override
 	public void submitGrades(int courseId, String username,String grade) {
-		// TODO Auto-generated method stub
+		// Submit grades for a student of a particular course
 		RegistrationDao registrationDao = new RegistrationDaoImpl();
 		studentCourseDao.submitGrades(courseId,username,grade);
 	}
@@ -52,10 +52,10 @@ public class ProfessorService implements ProfessorInterface{
 	}
 
 	
-	// View list of enrolled students in the courses taught by professor
+	
 	@Override
 	public List<User> viewEnrolledStudents(int courseId,int userId) {
-		// TODO Auto-generated method stub
+		// View list of enrolled students in the courses taught by professor
 		List<User> userList = null;
 		
 		if(professorCourseDao.verifyProfessor(courseId,userId))
