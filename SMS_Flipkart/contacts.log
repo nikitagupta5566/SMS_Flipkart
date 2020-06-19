@@ -1,0 +1,1199 @@
+16:34:59,745  INFO UserClient,main:20 - Enter username
+16:35:36,370  INFO UserClient,main:24 - Enter username
+16:35:40,067  INFO UserClient,main:27 - Enter password
+16:47:23,806  INFO UserClient,main:23 - Enter username
+16:47:26,745  INFO UserClient,main:26 - Enter password
+17:15:14,264  INFO UserClient,main:23 - Enter username
+17:15:17,058  INFO UserClient,main:26 - Enter password
+18:10:48,672  INFO UserClient,main:23 - Enter username
+18:10:51,410  INFO UserClient,main:26 - Enter password
+18:12:04,829  INFO UserClient,main:23 - Enter username
+18:12:07,854  INFO UserClient,main:26 - Enter password
+18:13:04,784  INFO UserClient,main:23 - Enter username
+18:13:08,316  INFO UserClient,main:26 - Enter password
+18:14:50,263  INFO UserClient,main:23 - Enter username
+18:14:53,086  INFO UserClient,main:26 - Enter password
+18:15:36,002  INFO UserClient,main:23 - Enter username
+18:15:39,109  INFO UserClient,main:26 - Enter password
+18:16:21,411  INFO UserClient,main:23 - Enter username
+18:16:25,324  INFO UserClient,main:26 - Enter password
+18:19:48,061  INFO UserClient,main:23 - Enter username
+18:19:51,063  INFO UserClient,main:26 - Enter password
+18:21:46,934  INFO UserClient,main:23 - Enter username
+18:21:50,432  INFO UserClient,main:26 - Enter password
+18:22:14,512  INFO UserClient,main:23 - Enter username
+18:22:17,357  INFO UserClient,main:26 - Enter password
+18:25:48,072  INFO UserClient,main:23 - Enter username
+18:25:52,387  INFO UserClient,main:26 - Enter password
+18:27:17,737  INFO UserClient,main:23 - Enter username
+18:27:21,992  INFO UserClient,main:26 - Enter password
+18:27:49,547  INFO UserClient,main:23 - Enter username
+18:27:51,970  INFO UserClient,main:26 - Enter password
+18:27:52,963  INFO UserClient,main:32 - com.mysql.cj.jdbc.result.ResultSetImpl@77b52d12
+18:28:54,774  INFO UserClient,main:23 - Enter username
+18:28:56,765  INFO UserClient,main:26 - Enter password
+18:28:57,940  INFO UserClient,main:32 - com.mysql.cj.jdbc.result.ResultSetImpl@77b52d12
+18:28:57,941  INFO UserClient,main:35 - 1
+18:29:21,288  INFO UserClient,main:23 - Enter username
+18:29:23,453  INFO UserClient,main:26 - Enter password
+18:31:28,814  INFO UserClient,main:23 - Enter username
+18:31:31,933  INFO UserClient,main:26 - Enter password
+18:31:54,139  INFO UserClient,main:23 - Enter username
+18:31:58,023  INFO UserClient,main:26 - Enter password
+18:32:12,381  INFO UserClient,main:23 - Enter username
+18:32:14,684  INFO UserClient,main:26 - Enter password
+18:33:43,910  INFO UserClient,main:23 - Enter username
+18:33:48,598  INFO UserClient,main:26 - Enter password
+18:33:50,482  INFO UserClient,main:32 - com.mysql.cj.jdbc.result.ResultSetImpl@77b52d12
+18:33:50,483  INFO UserClient,main:42 - sfe
+18:33:58,474  INFO UserClient,main:23 - Enter username
+18:34:03,019  INFO UserClient,main:26 - Enter password
+18:34:05,019  INFO UserClient,main:32 - com.mysql.cj.jdbc.result.ResultSetImpl@77b52d12
+18:34:05,020  INFO UserClient,main:42 - sfe
+18:37:02,148  INFO UserClient,main:23 - Enter username
+18:37:05,980  INFO UserClient,main:26 - Enter password
+18:37:07,404 DEBUG UserClient,main:41 - admin
+21:33:22,476  INFO UserClient,main:25 - Enter username
+21:33:27,421  INFO UserClient,main:28 - Enter password
+21:33:43,222  INFO UserClient,main:25 - Enter username
+21:33:45,816  INFO UserClient,main:28 - Enter password
+21:33:48,938 DEBUG UserClient,main:41 - admin
+21:34:54,138  INFO UserClient,main:25 - Enter username
+21:34:58,244  INFO UserClient,main:28 - Enter password
+21:35:00,396 DEBUG UserClient,main:41 - admin
+22:35:17,685  INFO UserClient,main:27 - Enter username
+22:35:30,493  INFO UserClient,main:30 - Enter password
+22:35:32,826 DEBUG UserClient,main:41 - admin
+22:35:32,827  INFO UserClient,main:102 - 1. View Courses
+2. Select Course
+3. Record Grades
+4. View Student Details
+22:35:32,827  INFO UserClient,main:106 - Enter Choice
+23:27:27,722  INFO UserClient,main:27 - Enter username
+23:27:44,855  INFO UserClient,main:30 - Enter password
+23:27:45,468 DEBUG UserClient,main:41 - student
+23:27:45,469  INFO UserClient,main:102 - 1. View Courses
+2. Select Course
+3. Record Grades
+4. View Student Details
+23:27:45,469  INFO UserClient,main:106 - Enter Choice
+23:28:32,902  INFO UserClient,main:27 - Enter username
+23:28:35,455  INFO UserClient,main:30 - Enter password
+23:28:36,424 DEBUG UserClient,main:41 - student
+23:28:36,425  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+23:28:36,425  INFO UserClient,main:78 - Enter Choice
+23:28:43,374  INFO UserClient,main:78 - Enter Choice
+23:38:37,804  INFO UserClient,main:27 - Enter username
+23:38:40,967  INFO UserClient,main:30 - Enter password
+23:38:41,673 DEBUG UserClient,main:41 - student
+23:38:41,674  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+23:38:41,675  INFO UserClient,main:78 - Enter Choice
+23:38:49,360 ERROR UserClient,main:47 - Table 'flipkart.courses' doesn't exist
+23:38:49,363  INFO UserClient,main:78 - Enter Choice
+23:39:09,676  INFO UserClient,main:27 - Enter username
+23:39:13,130  INFO UserClient,main:30 - Enter password
+23:39:14,038 DEBUG UserClient,main:41 - student
+23:39:14,039  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+23:39:14,040  INFO UserClient,main:78 - Enter Choice
+23:39:18,118 ERROR UserClient,main:47 - Column 'courseid' not found.
+23:39:18,119  INFO UserClient,main:78 - Enter Choice
+23:39:59,201  INFO UserClient,main:27 - Enter username
+23:40:01,767  INFO UserClient,main:30 - Enter password
+23:40:03,157 DEBUG UserClient,main:41 - student
+23:40:03,158  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+23:40:03,158  INFO UserClient,main:78 - Enter Choice
+23:40:06,918  INFO UserClient,main:78 - Enter Choice
+23:41:09,116  INFO UserClient,main:27 - Enter username
+23:41:12,535  INFO UserClient,main:30 - Enter password
+23:41:13,441 DEBUG UserClient,main:41 - student
+23:41:13,443  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+23:41:13,444  INFO UserClient,main:78 - Enter Choice
+23:41:17,271  INFO UserClient,main:40 - 100
+23:41:17,272  INFO UserClient,main:78 - Enter Choice
+23:42:37,396  INFO UserClient,main:27 - Enter username
+23:42:40,284  INFO UserClient,main:30 - Enter password
+23:42:41,124 DEBUG UserClient,main:41 - student
+23:42:41,125  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+23:42:41,126  INFO UserClient,main:78 - Enter Choice
+23:42:43,841  INFO UserClient,main:40 - 100
+23:42:43,842 DEBUG UserClient,main:26 - 100
+23:42:43,842  INFO UserClient,main:78 - Enter Choice
+23:43:38,713  INFO UserClient,main:27 - Enter username
+23:43:41,118  INFO UserClient,main:30 - Enter password
+23:43:41,935 DEBUG UserClient,main:41 - student
+23:43:41,936  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+23:43:41,936  INFO UserClient,main:78 - Enter Choice
+23:43:43,788  INFO UserClient,main:40 - 100
+23:43:43,789 DEBUG UserClient,main:26 - 100
+23:43:43,789  INFO UserClient,main:85 - null100,Btech,UnderGraduate
+23:43:43,789  INFO UserClient,main:78 - Enter Choice
+23:44:25,645  INFO UserClient,main:27 - Enter username
+23:44:28,676  INFO UserClient,main:30 - Enter password
+23:44:29,749 DEBUG UserClient,main:41 - student
+23:44:29,750  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+23:44:29,750  INFO UserClient,main:78 - Enter Choice
+23:44:32,147  INFO UserClient,main:40 - 100
+23:44:32,148  INFO UserClient,main:85 - 100,Btech,UnderGraduate
+23:44:32,149  INFO UserClient,main:78 - Enter Choice
+00:45:53,877  INFO UserClient,main:27 - Enter username
+00:45:56,578  INFO UserClient,main:30 - Enter password
+00:45:57,491 DEBUG UserClient,main:41 - student
+00:45:57,492  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+00:45:57,492  INFO UserClient,main:78 - Enter Choice
+00:46:00,387 ERROR UserClient,main:46 - Table 'flipkart.course' doesn't exist
+00:46:00,388  INFO UserClient,main:85 - 
+00:46:00,388  INFO UserClient,main:78 - Enter Choice
+00:46:38,737  INFO UserClient,main:27 - Enter username
+00:46:41,197  INFO UserClient,main:30 - Enter password
+00:46:41,812 DEBUG UserClient,main:41 - student
+00:46:41,813  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+00:46:41,813  INFO UserClient,main:78 - Enter Choice
+00:46:43,437  INFO UserClient,main:85 - 100,Btech,UnderGraduate
+00:46:43,437  INFO UserClient,main:78 - Enter Choice
+07:42:18,981  INFO UserClient,main:27 - Enter username
+07:42:22,971  INFO UserClient,main:30 - Enter password
+07:42:24,327 DEBUG UserClient,main:41 - student
+07:42:24,338  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+07:42:24,339  INFO UserClient,main:78 - Enter Choice
+07:42:27,371  INFO UserClient,main:85 - 100,Btech,UnderGraduate
+07:42:27,371  INFO UserClient,main:78 - Enter Choice
+07:42:30,689  INFO UserClient,main:88 - Enter course_id:
+07:42:33,673 ERROR UserClient,main:33 - No value specified for parameter 1
+07:42:33,673  INFO UserClient,main:78 - Enter Choice
+07:43:04,772  INFO UserClient,main:27 - Enter username
+07:43:06,743  INFO UserClient,main:30 - Enter password
+07:43:07,637 DEBUG UserClient,main:41 - student
+07:43:07,639  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+07:43:07,639  INFO UserClient,main:78 - Enter Choice
+07:43:09,085  INFO UserClient,main:85 - 100,Btech,UnderGraduate
+07:43:09,086  INFO UserClient,main:78 - Enter Choice
+07:43:13,091  INFO UserClient,main:88 - Enter course_id:
+07:43:14,594 DEBUG UserClient,main:90 - 0
+07:43:14,601 ERROR UserClient,main:33 - No value specified for parameter 1
+07:43:14,601  INFO UserClient,main:78 - Enter Choice
+07:44:47,335  INFO UserClient,main:27 - Enter username
+07:44:54,242  INFO UserClient,main:30 - Enter password
+07:44:55,469 DEBUG UserClient,main:41 - student
+07:44:55,471  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+07:44:55,471  INFO UserClient,main:78 - Enter Choice
+07:44:57,905  INFO UserClient,main:88 - Enter course_id:
+07:45:01,604 DEBUG UserClient,main:90 - 0 a
+07:45:01,609 ERROR UserClient,main:33 - No value specified for parameter 1
+07:45:01,609  INFO UserClient,main:78 - Enter Choice
+07:45:30,407  INFO UserClient,main:27 - Enter username
+07:46:05,964  INFO UserClient,main:27 - Enter username
+07:46:08,873  INFO UserClient,main:30 - Enter password
+07:46:09,923 DEBUG UserClient,main:41 - student
+07:46:09,924  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+07:46:09,925  INFO UserClient,main:78 - Enter Choice
+07:46:12,130  INFO UserClient,main:88 - Enter course_id:
+07:46:15,142 DEBUG UserClient,main:90 - 0 a
+07:46:15,147 ERROR UserClient,main:33 - No value specified for parameter 1
+07:46:15,147  INFO UserClient,main:78 - Enter Choice
+07:46:56,731  INFO UserClient,main:27 - Enter username
+07:47:00,511  INFO UserClient,main:30 - Enter password
+07:47:01,266 DEBUG UserClient,main:41 - student
+07:47:01,267  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+07:47:01,267  INFO UserClient,main:78 - Enter Choice
+07:47:02,737  INFO UserClient,main:88 - Enter course_id:
+07:47:05,236 DEBUG UserClient,main:90 - 0 a
+07:47:05,236 DEBUG UserClient,main:36 - 100 0
+07:47:05,241 ERROR UserClient,main:33 - No value specified for parameter 1
+07:47:05,241  INFO UserClient,main:78 - Enter Choice
+07:55:32,330  INFO UserClient,main:27 - Enter username
+07:55:35,168  INFO UserClient,main:30 - Enter password
+07:55:35,698 DEBUG UserClient,main:44 - student
+07:55:35,699  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+07:55:35,699  INFO UserClient,main:78 - Enter Choice
+07:55:37,771  INFO UserClient,main:88 - Enter course_id:
+07:55:40,126 DEBUG UserClient,main:90 - 2 a
+07:55:40,127 DEBUG UserClient,main:36 - 100 2
+07:55:40,162 ERROR UserClient,main:34 - Unknown column 'student_id' in 'field list'
+07:55:40,162  INFO UserClient,main:78 - Enter Choice
+07:56:21,717  INFO UserClient,main:27 - Enter username
+07:56:25,119  INFO UserClient,main:30 - Enter password
+07:56:25,946 DEBUG UserClient,main:44 - student
+07:56:25,947  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+07:56:25,947  INFO UserClient,main:78 - Enter Choice
+07:56:27,266  INFO UserClient,main:88 - Enter course_id:
+07:56:29,506 DEBUG UserClient,main:90 - 2 a
+07:56:29,507 DEBUG UserClient,main:36 - 100 2
+07:56:29,519 ERROR UserClient,main:34 - Field 'id' doesn't have a default value
+07:56:29,520  INFO UserClient,main:78 - Enter Choice
+08:16:00,306  INFO UserClient,main:27 - Enter username
+08:16:01,969  INFO UserClient,main:30 - Enter password
+08:16:02,865 DEBUG UserClient,main:44 - student
+08:16:02,866  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+08:16:02,866  INFO UserClient,main:78 - Enter Choice
+08:16:05,052  INFO UserClient,main:88 - Enter course_id:
+08:16:07,177 DEBUG UserClient,main:90 - 2 a
+08:16:07,177 DEBUG UserClient,main:36 - 100 2
+08:16:07,188 ERROR UserClient,main:34 - Field 'id' doesn't have a default value
+08:16:07,188  INFO UserClient,main:78 - Enter Choice
+08:16:45,826  INFO UserClient,main:27 - Enter username
+08:16:47,791  INFO UserClient,main:30 - Enter password
+08:16:48,374 DEBUG UserClient,main:44 - student
+08:16:48,375  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+08:16:48,375  INFO UserClient,main:78 - Enter Choice
+08:16:50,729  INFO UserClient,main:88 - Enter course_id:
+08:16:52,997 DEBUG UserClient,main:90 - 2 a
+08:16:52,998 DEBUG UserClient,main:36 - 100 2
+08:16:53,120 DEBUG UserClient,main:29 - 1
+08:16:53,121  INFO UserClient,main:78 - Enter Choice
+08:17:19,744  INFO UserClient,main:27 - Enter username
+08:17:22,132  INFO UserClient,main:30 - Enter password
+08:17:22,689 DEBUG UserClient,main:44 - student
+08:17:22,690  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+08:17:22,690  INFO UserClient,main:78 - Enter Choice
+08:17:24,447  INFO UserClient,main:88 - Enter course_id:
+08:17:25,959 DEBUG UserClient,main:90 - 2 a
+08:17:25,959 DEBUG UserClient,main:36 - 100 2
+08:17:26,079 DEBUG UserClient,main:29 - 1
+08:17:26,079  INFO UserClient,main:78 - Enter Choice
+08:23:45,000  INFO UserClient,main:27 - Enter username
+08:23:50,142  INFO UserClient,main:30 - Enter password
+08:23:51,155 DEBUG UserClient,main:44 - student
+08:23:51,156  INFO UserClient,main:74 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+08:23:51,156  INFO UserClient,main:79 - Enter Choice
+08:23:53,113  INFO UserClient,main:89 - Enter course_id:
+08:24:00,049 DEBUG UserClient,main:36 - 100 2
+08:24:00,540 DEBUG UserClient,main:29 - 1
+08:24:00,541  INFO UserClient,main:79 - Enter Choice
+08:24:03,658  INFO UserClient,main:95 - Enter course_id:
+08:24:05,764 DEBUG UserClient,main:53 - 3
+08:24:05,765  INFO UserClient,main:79 - Enter Choice
+09:18:51,915  INFO UserClient,main:29 - Enter username
+09:18:54,785  INFO UserClient,main:32 - Enter password
+09:18:55,911  INFO UserClient,main:114 - 1. View Courses
+2. Select Course
+3. Record Grades
+4. View Student Details
+09:18:55,912  INFO UserClient,main:118 - Enter Choice
+09:21:22,366  INFO UserClient,main:29 - Enter username
+09:21:24,596  INFO UserClient,main:32 - Enter password
+09:21:25,208 DEBUG UserClient,main:44 - student
+09:21:25,210  INFO UserClient,main:76 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+09:21:25,211  INFO UserClient,main:81 - Enter Choice
+09:21:29,397  INFO UserClient,main:29 - Enter username
+09:21:32,834  INFO UserClient,main:32 - Enter password
+09:21:38,043 DEBUG UserClient,main:44 - admin
+09:21:38,044  INFO UserClient,main:43 - 1. Add user
+2. Delete User
+3. Update User
+4. Add Course
+5. Delete Course
+6. Update Course 
+7. Generate Report Card 
+09:21:38,044  INFO UserClient,main:47 - Enter Choice
+09:21:44,975  INFO UserClient,main:29 - Enter username
+09:21:52,977  INFO UserClient,main:32 - Enter password
+09:21:56,286  INFO UserClient,main:114 - 1. View Courses
+2. Select Course
+3. Record Grades
+4. View Student Details
+09:21:56,287  INFO UserClient,main:118 - Enter Choice
+09:22:00,163  INFO UserClient,main:29 - Enter username
+11:25:40,951  INFO UserClient,main:29 - Enter username
+11:25:47,440  INFO UserClient,main:32 - Enter password
+11:25:48,133 DEBUG UserClient,main:44 - student
+11:25:48,134  INFO UserClient,main:77 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+11:25:48,135  INFO UserClient,main:82 - Enter Choice
+11:28:06,863  INFO UserClient,main:29 - Enter username
+11:28:08,222  INFO UserClient,main:32 - Enter password
+11:28:08,988 DEBUG UserClient,main:44 - student
+11:28:08,989  INFO UserClient,main:77 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+11:28:08,989  INFO UserClient,main:82 - Enter Choice
+11:28:22,045  INFO UserClient,main:89 - 100, Data Structure,under graduate
+11:28:22,046  INFO UserClient,main:82 - Enter Choice
+11:28:28,644  INFO UserClient,main:92 - Enter course_id:
+11:28:31,068 DEBUG UserClient,main:36 - 100 2
+11:28:31,133 DEBUG UserClient,main:29 - 1
+11:28:31,134  INFO UserClient,main:82 - Enter Choice
+14:32:28,822  INFO UserClient,main:31 - Enter username
+14:32:31,118  INFO UserClient,main:34 - Enter password
+14:32:32,535 DEBUG UserClient,main:44 - student
+14:32:32,547  INFO UserClient,main:45 - 2020-06-12 14:32:32.547
+14:32:32,547  INFO UserClient,main:46 - Successfully logged in:
+14:32:32,580  INFO UserClient,main:83 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+14:32:32,581  INFO UserClient,main:88 - Enter Choice
+14:33:41,282  INFO UserClient,main:31 - Enter username
+14:33:43,279  INFO UserClient,main:34 - Enter password
+14:33:43,869 DEBUG UserClient,main:44 - student
+14:33:43,881  INFO UserClient,main:45 - 2020-06-12 14:33:43.881: Successfully logged in as a
+14:33:43,882  INFO UserClient,main:82 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+14:33:43,882  INFO UserClient,main:87 - Enter Choice
+14:35:40,932  INFO UserClient,main:32 - Enter username
+14:35:43,272  INFO UserClient,main:35 - Enter password
+14:35:44,198  INFO UserClient,main:45 - Fri Jun 12 14:35:44 IST 2020: Successfully logged in as a
+14:35:44,198  INFO UserClient,main:120 - 1. View Courses
+2. Select Course
+3. Record Grades
+4. View Student Details
+14:35:44,199  INFO UserClient,main:124 - Enter Choice
+14:48:06,141  INFO UserClient,main:33 - Enter username
+14:48:08,318  INFO UserClient,main:36 - Enter password
+14:48:09,076 DEBUG UserClient,main:44 - student
+14:48:09,096  INFO UserClient,main:45 - 2020-06-12  14:48:09.096 FRIDAY: Successfully logged in as a
+14:48:09,099  INFO UserClient,main:82 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+14:48:09,099  INFO UserClient,main:87 - Enter Choice
+14:49:39,065  INFO UserClient,main:33 - Enter username
+14:49:41,583  INFO UserClient,main:36 - Enter password
+14:49:42,929 DEBUG UserClient,main:44 - student
+14:49:42,942  INFO UserClient,main:45 - 2020-06-12  14:49:42.942 FRIDAY: Successfully logged in as a
+14:49:42,943  INFO UserClient,main:82 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+14:49:42,943  INFO UserClient,main:87 - Enter Choice
+14:57:58,442  INFO UserClient,main:33 - Enter username
+14:58:01,223  INFO UserClient,main:36 - Enter password
+14:58:02,447 DEBUG UserClient,main:44 - student
+14:58:02,474  INFO UserClient,main:45 - 2020-06-12  14:58:02.474 FRIDAY: Successfully logged in as a
+14:58:02,477  INFO UserClient,main:82 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+14:58:02,478  INFO UserClient,main:87 - Enter Choice
+15:22:11,963  INFO UserClient,main:33 - Enter username
+15:22:14,457  INFO UserClient,main:36 - Enter password
+15:22:15,147 DEBUG UserClient,main:44 - student
+15:22:15,163  INFO UserClient,main:45 - 2020-06-12  15:22:15.162 FRIDAY: Successfully logged in as a
+15:22:15,165  INFO UserClient,main:85 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+7.Exit
+15:22:15,165  INFO UserClient,main:90 - Enter Choice
+16:32:49,863  INFO UserClient,main:33 - Enter username
+16:32:51,950  INFO UserClient,main:36 - Enter password
+16:32:54,587 DEBUG UserClient,main:44 - student
+16:32:54,602  INFO UserClient,main:45 - 2020-06-12  16:32:54.601 FRIDAY: Successfully logged in as A
+16:32:54,603  INFO UserClient,main:85 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+7.Exit
+16:32:54,603  INFO UserClient,main:90 - Enter Choice
+16:32:58,967  INFO UserClient,main:97 - 
+16:32:58,967  INFO UserClient,main:90 - Enter Choice
+16:35:37,946  INFO UserClient,main:33 - Enter username
+16:35:40,490  INFO UserClient,main:36 - Enter password
+16:35:41,947 DEBUG UserClient,main:44 - student
+16:35:41,963  INFO UserClient,main:45 - 2020-06-12  16:35:41.962 FRIDAY: Successfully logged in as a
+16:35:41,965  INFO UserClient,main:85 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+7.Exit
+16:35:41,965  INFO UserClient,main:90 - Enter Choice
+16:35:43,491  INFO UserClient,main:97 - 
+16:35:43,491  INFO UserClient,main:90 - Enter Choice
+20:58:13,566  INFO UserClient,main:34 - Enter username
+20:58:26,375  INFO UserClient,main:37 - Enter password
+20:58:28,073 DEBUG UserClient,main:44 - admin
+20:58:28,099  INFO UserClient,main:46 - 2020-06-12  20:58:28.098 FRIDAY: Successfully logged in as nikita
+20:58:28,099  INFO UserClient,main:50 - 1. Add user
+2. Delete User
+3. Update User
+4. Add Course
+5. Delete Course
+6. Update Course 
+7. Generate Report Card
+8.Exit 
+20:58:28,099  INFO UserClient,main:54 - Enter Choice
+20:58:32,429  INFO UserClient,main:67 - Enter Course Id, Course Name and Course Description 
+20:59:00,995 ERROR UserClient,main:33 - Incorrect integer value: 'Operating' for column 'id' at row 1
+20:59:00,996  INFO UserClient,main:54 - Enter Choice
+21:01:24,628  INFO UserClient,main:67 - Enter Course Id, Course Name and Course Description 
+21:01:44,559 DEBUG UserClient,main:29 - 1
+21:01:44,560  INFO UserClient,main:54 - Enter Choice
+21:04:13,998  INFO UserClient,main:54 - Enter Choice
+21:04:15,479  INFO UserClient,main:54 - Enter Choice
+21:05:31,621  INFO UserClient,main:34 - Enter username
+21:05:35,327  INFO UserClient,main:37 - Enter password
+21:05:37,188 DEBUG UserClient,main:44 - admin
+21:05:37,223  INFO UserClient,main:46 - 2020-06-12  21:05:37.223 FRIDAY: Successfully logged in as nikita
+21:05:37,224  INFO UserClient,main:50 - 1. Add user
+2. Delete User
+3. Update User
+4. Add Course
+5. Delete Course
+6. Update Course 
+7. Generate Report Card
+8.Exit 
+21:05:37,226  INFO UserClient,main:54 - Enter Choice
+21:05:43,470  INFO UserClient,main:74 - Enter Course Id:
+21:05:46,801 DEBUG UserClient,main:48 - HELLLOOOO
+21:05:46,914 DEBUG UserClient,main:53 - 1
+21:05:46,914  INFO UserClient,main:54 - Enter Choice
+22:14:33,042  INFO UserClient,main:34 - Enter username
+22:14:37,614  INFO UserClient,main:37 - Enter password
+22:14:39,287 DEBUG UserClient,main:44 - admin
+22:14:39,314  INFO UserClient,main:46 - 2020-06-12  22:14:39.313 FRIDAY: Successfully logged in as nikita
+22:14:39,314  INFO UserClient,main:50 - 1. Add user
+2. Delete User
+3. Update User
+4. Add Course
+5. Delete Course
+6. Update Course 
+7. Generate Report Card
+8.Exit 
+22:14:39,315  INFO UserClient,main:54 - Enter Choice
+22:14:41,773  INFO UserClient,main:61 - Enter Username, UserPassword and UserRole 
+22:15:00,111 DEBUG UserClient,main:69 - 1
+22:15:00,112  INFO UserClient,main:54 - Enter Choice
+22:26:14,559  INFO UserClient,main:34 - Enter username
+22:26:17,891  INFO UserClient,main:37 - Enter password
+22:26:19,648 DEBUG UserClient,main:44 - admin
+22:26:19,666  INFO UserClient,main:46 - 2020-06-12  22:26:19.665 FRIDAY: Successfully logged in as nikita
+22:26:19,666  INFO UserClient,main:50 - 1. Add user
+2. Delete User
+3. Update User
+4. Add Course
+5. Delete Course
+6. Update Course 
+7. Generate Report Card
+8.Exit 
+22:26:19,668  INFO UserClient,main:54 - Enter Choice
+22:26:23,801  INFO UserClient,main:69 - Enter username:
+22:26:32,513 DEBUG UserClient,main:88 - 1
+22:26:32,513  INFO UserClient,main:54 - Enter Choice
+23:45:53,370  INFO UserClient,main:34 - Enter username
+23:45:57,761  INFO UserClient,main:37 - Enter password
+23:45:59,535 DEBUG UserClient,main:46 - admin
+23:45:59,559  INFO UserClient,main:46 - 2020-06-12  23:45:59.559 FRIDAY: Successfully logged in as nikita
+23:45:59,559  INFO UserClient,main:50 - 
+1. View all users
+ 2. View all courses
+ 3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+23:45:59,561  INFO UserClient,main:54 - Enter Choice
+23:46:06,643  INFO UserClient,main:54 - Enter Choice
+23:50:29,979  INFO UserClient,main:34 - Enter username
+23:50:33,358  INFO UserClient,main:37 - Enter password
+23:50:34,667 DEBUG UserClient,main:46 - admin
+23:50:34,684  INFO UserClient,main:46 - 2020-06-12  23:50:34.684 FRIDAY: Successfully logged in as nikita
+23:50:34,685  INFO UserClient,main:50 - 
+1. View all users
+ 2. View all courses
+ 3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+23:50:34,686  INFO UserClient,main:54 - Enter Choice
+23:50:38,671  INFO UserClient,main:54 - Enter Choice
+23:51:02,742  INFO UserClient,main:34 - Enter username
+23:51:06,246  INFO UserClient,main:37 - Enter password
+23:51:07,724 DEBUG UserClient,main:46 - admin
+23:51:07,738  INFO UserClient,main:46 - 2020-06-12  23:51:07.737 FRIDAY: Successfully logged in as nikita
+23:51:07,738  INFO UserClient,main:50 - 
+1. View all users
+ 2. View all courses
+ 3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+23:51:07,739  INFO UserClient,main:54 - Enter Choice
+23:51:09,354  INFO UserClient,main:54 - Enter Choice
+23:54:54,432  INFO UserClient,main:34 - Enter username
+23:54:57,574  INFO UserClient,main:37 - Enter password
+23:54:59,078 DEBUG UserClient,main:46 - admin
+23:54:59,097  INFO UserClient,main:46 - 2020-06-12  23:54:59.097 FRIDAY: Successfully logged in as nikita
+23:54:59,098  INFO UserClient,main:50 - 
+1. View all users
+ 2. View all courses
+ 3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+23:54:59,099  INFO UserClient,main:54 - Enter Choice
+23:55:00,624  INFO UserClient,main:54 - Enter Choice
+23:55:37,550  INFO UserClient,main:34 - Enter username
+23:55:41,292  INFO UserClient,main:37 - Enter password
+23:55:42,987 DEBUG UserClient,main:46 - admin
+23:55:43,010  INFO UserClient,main:46 - 2020-06-12  23:55:43.010 FRIDAY: Successfully logged in as nikita
+23:55:43,011  INFO UserClient,main:50 - 
+1. View all users
+ 2. View all courses
+ 3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+23:55:43,013  INFO UserClient,main:54 - Enter Choice
+23:55:45,353  INFO UserClient,main:54 - Enter Choice
+23:56:30,255  INFO UserClient,main:34 - Enter username
+23:56:37,334  INFO UserClient,main:37 - Enter password
+23:56:39,179 DEBUG UserClient,main:46 - admin
+23:56:39,197  INFO UserClient,main:46 - 2020-06-12  23:56:39.196 FRIDAY: Successfully logged in as nikita
+23:56:39,197  INFO UserClient,main:50 - 
+1. View all users
+ 2. View all courses
+ 3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+23:56:39,199  INFO UserClient,main:54 - Enter Choice
+23:56:42,331  INFO UserClient,main:54 - Enter Choice
+00:12:00,148  INFO UserClient,main:34 - Enter username
+00:12:03,656  INFO UserClient,main:37 - Enter password
+00:12:05,702 DEBUG UserClient,main:46 - admin
+00:12:05,714  INFO UserClient,main:46 - 2020-06-13  00:12:05.714 SATURDAY: Successfully logged in as nikita
+00:12:05,714  INFO UserClient,main:50 - 
+1. View all users
+ 2. View all courses
+ 3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+00:12:05,716  INFO UserClient,main:54 - Enter Choice
+00:12:09,048  INFO UserClient,main:54 - Enter Choice
+00:15:18,649  INFO UserClient,main:34 - Enter username
+00:15:22,585  INFO UserClient,main:37 - Enter password
+00:15:24,505 DEBUG UserClient,main:46 - admin
+00:15:24,517  INFO UserClient,main:46 - 2020-06-13  00:15:24.516 SATURDAY: Successfully logged in as nikita
+00:15:24,517  INFO UserClient,main:50 - 
+1. View all users
+ 2. View all courses
+ 3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+00:15:24,518  INFO UserClient,main:54 - Enter Choice
+00:15:25,822  INFO UserClient,main:54 - Enter Choice
+00:27:25,561  INFO UserClient,main:34 - Enter username
+00:27:29,863  INFO UserClient,main:37 - Enter password
+00:27:32,122 DEBUG UserClient,main:46 - admin
+00:27:32,140  INFO UserClient,main:46 - 2020-06-13  00:27:32.140 SATURDAY: Successfully logged in as nikita
+00:27:32,141  INFO UserClient,main:50 - 
+1. View all users
+ 2. View all courses
+ 3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+00:27:32,142  INFO UserClient,main:54 - Enter Choice
+00:27:37,634  INFO UserClient,main:54 - Enter Choice
+00:27:57,179  INFO UserClient,main:34 - Enter username
+00:28:01,091  INFO UserClient,main:37 - Enter password
+00:28:03,761 DEBUG UserClient,main:46 - admin
+00:28:03,775  INFO UserClient,main:46 - 2020-06-13  00:28:03.775 SATURDAY: Successfully logged in as nikita
+00:28:03,775  INFO UserClient,main:50 - 
+1. View all users
+ 2. View all courses
+ 3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+00:28:03,777  INFO UserClient,main:54 - Enter Choice
+00:28:05,631  INFO UserClient,main:54 - Enter Choice
+00:28:57,309  INFO UserClient,main:34 - Enter username
+00:29:01,261  INFO UserClient,main:37 - Enter password
+00:29:03,661 DEBUG UserClient,main:46 - admin
+00:29:03,676  INFO UserClient,main:46 - 2020-06-13  00:29:03.676 SATURDAY: Successfully logged in as nikita
+00:29:03,676  INFO UserClient,main:50 - 
+1. View all users
+ 2. View all courses
+ 3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+00:29:03,678  INFO UserClient,main:54 - Enter Choice
+00:29:05,236  INFO UserClient,main:54 - Enter Choice
+00:29:51,771  INFO UserClient,main:34 - Enter username
+00:30:02,012  INFO UserClient,main:37 - Enter password
+00:30:03,937 DEBUG UserClient,main:46 - admin
+00:30:03,955  INFO UserClient,main:46 - 2020-06-13  00:30:03.955 SATURDAY: Successfully logged in as nikita
+00:30:03,955  INFO UserClient,main:50 - 
+1. View all users
+ 2. View all courses
+ 3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+00:30:03,957  INFO UserClient,main:54 - Enter Choice
+00:30:05,145  INFO UserClient,main:54 - Enter Choice
+01:02:34,843  INFO UserClient,main:34 - Enter username
+01:02:41,016  INFO UserClient,main:37 - Enter password
+01:02:42,612  INFO UserClient,main:46 - 2020-06-13  01:02:42.611 SATURDAY: Successfully logged in as d
+01:02:42,612  INFO UserClient,main:150 - 1. View Courses
+2. Select Course
+3. Record Grades
+4. View Student Details
+5. Exit
+01:02:42,614  INFO UserClient,main:154 - Enter Choice
+08:21:11,952  INFO UserClient,main:39 - Enter username
+08:21:16,608  INFO UserClient,main:42 - Enter password
+08:21:17,269 ERROR UserClient,main:53 - Wrong Username or password
+08:21:17,295  INFO UserClient,main:57 - 2020-06-13  08:21:17.295 SATURDAY: Successfully logged in as d
+08:22:35,869  INFO UserClient,main:41 - Enter username
+08:22:38,771  INFO UserClient,main:44 - Enter password
+08:22:39,336 ERROR UserClient,main:56 - Wrong Username or password
+08:22:39,336  INFO UserClient,main:41 - Enter username
+08:22:44,374  INFO UserClient,main:44 - Enter password
+08:22:45,679 DEBUG UserClient,main:42 - admin
+08:22:45,689  INFO UserClient,main:62 - 2020-06-13  08:22:45.689 SATURDAY: Successfully logged in as nikita
+08:22:45,690  INFO UserClient,main:66 - 
+1. View all users
+ 2. View all courses
+ 3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+08:22:45,691  INFO UserClient,main:70 - Enter Choice
+08:23:41,763  INFO UserClient,main:41 - Enter username
+08:23:44,952  INFO UserClient,main:44 - Enter password
+08:23:45,534 ERROR UserClient,main:56 - Wrong Username or password
+08:23:45,534  INFO UserClient,main:41 - Enter username
+08:23:48,800  INFO UserClient,main:44 - Enter password
+08:23:49,876 DEBUG UserClient,main:42 - admin
+08:23:49,886  INFO UserClient,main:62 - 2020-06-13  08:23:49.886 SATURDAY: Successfully logged in as nikita
+08:23:49,887  INFO UserClient,main:66 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+08:23:49,888  INFO UserClient,main:70 - Enter Choice
+08:23:55,839  INFO UserClient,main:70 - Enter Choice
+08:29:26,610  INFO UserClient,main:41 - Enter username
+08:29:29,700  INFO UserClient,main:44 - Enter password
+08:29:31,278 DEBUG UserClient,main:42 - admin
+08:29:31,296  INFO UserClient,main:62 - 2020-06-13  08:29:31.296 SATURDAY: Successfully logged in as nikita
+08:29:31,296  INFO UserClient,main:66 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+08:29:31,298  INFO UserClient,main:70 - Enter Choice
+08:29:33,047  INFO UserClient,main:70 - Enter Choice
+08:34:27,242  INFO UserClient,main:41 - Enter username
+08:34:30,121  INFO UserClient,main:44 - Enter password
+08:34:31,632 DEBUG UserClient,main:42 - admin
+08:34:31,645  INFO UserClient,main:62 - 2020-06-13  08:34:31.645 SATURDAY: Successfully logged in as nikita
+08:34:31,646  INFO UserClient,main:66 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+08:34:31,647  INFO UserClient,main:70 - Enter Choice
+08:34:32,891  INFO UserClient,main:76 - Enter type of user to display: student, professor or admin
+08:34:38,029  INFO UserClient,main:70 - Enter Choice
+08:34:40,934  INFO UserClient,main:76 - Enter type of user to display: student, professor or admin
+08:34:43,845  INFO UserClient,main:70 - Enter Choice
+08:34:54,138  INFO UserClient,main:41 - Enter username
+08:34:57,168  INFO UserClient,main:44 - Enter password
+08:34:59,664 DEBUG UserClient,main:42 - admin
+08:34:59,678  INFO UserClient,main:62 - 2020-06-13  08:34:59.677 SATURDAY: Successfully logged in as nikita
+08:34:59,678  INFO UserClient,main:66 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+08:34:59,680  INFO UserClient,main:70 - Enter Choice
+08:35:01,000  INFO UserClient,main:76 - Enter type of user to display: student, professor or admin
+08:35:03,056  INFO UserClient,main:70 - Enter Choice
+08:39:56,872  INFO UserClient,main:41 - Enter username
+08:40:06,081  INFO UserClient,main:44 - Enter password
+08:40:07,556 DEBUG UserClient,main:42 - admin
+08:40:07,569  INFO UserClient,main:62 - 2020-06-13  08:40:07.569 SATURDAY: Successfully logged in as nikita
+08:40:07,569  INFO UserClient,main:66 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+08:40:07,570  INFO UserClient,main:70 - Enter Choice
+08:40:08,980  INFO UserClient,main:76 - Enter type of user to display: student, professor, admin
+08:40:13,623  INFO UserClient,main:70 - Enter Choice
+09:44:28,951  INFO UserClient,main:76 - Enter type of user to display: student, professor, admin
+09:44:33,702  INFO UserClient,main:70 - Enter Choice
+09:44:40,310  INFO UserClient,main:70 - Enter Choice
+09:45:34,933  INFO UserClient,main:70 - Enter Choice
+09:45:40,501  INFO UserClient,main:41 - Enter username
+09:45:44,688  INFO UserClient,main:44 - Enter password
+09:45:46,172 DEBUG UserClient,main:42 - admin
+09:45:46,192  INFO UserClient,main:62 - 2020-06-13  09:45:46.192 SATURDAY: Successfully logged in as nikita
+09:45:46,193  INFO UserClient,main:66 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+09:45:46,195  INFO UserClient,main:70 - Enter Choice
+09:45:48,019  INFO UserClient,main:70 - Enter Choice
+09:45:57,388  INFO UserClient,main:84 - Enter Username, UserPassword and UserRole 
+09:46:18,602 DEBUG UserClient,main:66 - 1
+09:46:18,602  INFO UserClient,main:70 - Enter Choice
+09:46:28,219  INFO UserClient,main:92 - Enter username:
+09:46:38,952 DEBUG UserClient,main:85 - 1
+09:46:38,952  INFO UserClient,main:70 - Enter Choice
+09:46:42,352  INFO UserClient,main:76 - Enter type of user to display: student, professor, admin
+09:46:49,168  INFO UserClient,main:70 - Enter Choice
+09:49:05,506  INFO UserClient,main:41 - Enter username
+09:49:08,612  INFO UserClient,main:44 - Enter password
+09:49:09,991 DEBUG UserClient,main:42 - admin
+09:49:10,009  INFO UserClient,main:62 - 2020-06-13  09:49:10.009 SATURDAY: Successfully logged in as nikita
+09:49:10,010  INFO UserClient,main:66 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+09:49:10,011  INFO UserClient,main:70 - Enter Choice
+09:49:12,330  INFO UserClient,main:84 - Enter Username, UserPassword and UserRole and Gender
+09:49:28,754 DEBUG UserClient,main:66 - 1
+09:49:28,754  INFO UserClient,main:70 - Enter Choice
+09:51:11,843  INFO UserClient,main:41 - Enter username
+09:51:20,669  INFO UserClient,main:44 - Enter password
+09:51:22,687 DEBUG UserClient,main:42 - admin
+09:51:22,711  INFO UserClient,main:62 - 2020-06-13  09:51:22.711 SATURDAY: Successfully logged in as nikita
+09:51:22,712  INFO UserClient,main:66 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+09:51:22,714  INFO UserClient,main:70 - Enter Choice
+09:51:26,394  INFO UserClient,main:76 - Enter type of user to display: student, professor, admin
+09:51:35,746  INFO UserClient,main:70 - Enter Choice
+09:51:41,476  INFO UserClient,main:76 - Enter type of user to display: student, professor, admin
+09:51:45,254  INFO UserClient,main:70 - Enter Choice
+09:51:48,277  INFO UserClient,main:76 - Enter type of user to display: student, professor, admin
+09:51:49,990  INFO UserClient,main:70 - Enter Choice
+09:51:59,817  INFO UserClient,main:84 - Enter Username, UserPassword and UserRole and Gender
+09:52:11,140 DEBUG UserClient,main:66 - 1
+09:52:11,140  INFO UserClient,main:70 - Enter Choice
+09:52:17,039  INFO UserClient,main:76 - Enter type of user to display: student, professor, admin
+09:52:20,969  INFO UserClient,main:70 - Enter Choice
+09:52:30,838  INFO UserClient,main:93 - Enter username:
+09:52:37,016 DEBUG UserClient,main:85 - 1
+09:52:37,017  INFO UserClient,main:70 - Enter Choice
+09:52:49,067  INFO UserClient,main:100 - Enter Course Id, Course Name and Course Description 
+09:52:58,847 DEBUG UserClient,main:29 - 1
+09:52:58,847  INFO UserClient,main:70 - Enter Choice
+09:53:03,647  INFO UserClient,main:107 - Enter Course Id:
+09:53:06,316 DEBUG UserClient,main:52 - 1
+09:53:06,316  INFO UserClient,main:70 - Enter Choice
+09:59:53,940  INFO UserClient,main:41 - Enter username
+09:59:57,562  INFO UserClient,main:44 - Enter password
+09:59:59,045 DEBUG UserClient,main:42 - admin
+09:59:59,062  INFO UserClient,main:62 - 2020-06-13  09:59:59.061 SATURDAY: Successfully logged in as nikita
+09:59:59,062  INFO UserClient,main:66 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+09:59:59,064  INFO UserClient,main:70 - Enter Choice
+10:19:52,700  INFO UserClient,main:41 - Enter username
+10:19:57,544  INFO UserClient,main:44 - Enter password
+10:20:00,271 DEBUG UserClient,main:42 - admin
+10:20:00,289  INFO UserClient,main:62 - 2020-06-13  10:20:00.289 SATURDAY: Successfully logged in as nikita
+10:20:00,290  INFO UserClient,main:66 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+10:20:00,291  INFO UserClient,main:70 - Enter Choice
+10:20:03,653  INFO UserClient,main:76 - Enter type of user to display: student, professor, admin
+10:20:09,824  INFO UserClient,main:70 - Enter Choice
+11:45:43,261  INFO UserClient,main:41 - Enter username
+15:24:17,845  INFO UserClient,main:41 - Enter username
+15:24:20,285  INFO UserClient,main:44 - Enter password
+15:24:21,550 ERROR UserClient,main:56 - Wrong Username or password
+15:24:21,551  INFO UserClient,main:41 - Enter username
+15:24:46,919  INFO UserClient,main:44 - Enter password
+15:24:47,233 DEBUG UserClient,main:42 - student
+15:24:47,340  INFO UserClient,main:62 - 2020-06-13  15:24:47.339 SATURDAY: Successfully logged in as c
+15:24:47,393  INFO UserClient,main:127 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+7.Exit
+15:24:47,393  INFO UserClient,main:132 - Enter Choice
+15:45:12,669  INFO UserClient,main:139 - null1,History,null2,Chemistry,null
+15:45:12,669  INFO UserClient,main:132 - Enter Choice
+15:46:08,722  INFO UserClient,main:41 -       Enter username
+15:49:03,010  INFO UserClient,main:44 - Enter password
+15:49:04,056 DEBUG UserClient,main:42 - student
+15:49:04,082  INFO UserClient,main:62 - 2020-06-13  15:49:04.082 SATURDAY: Successfully logged in as c
+15:49:04,084  INFO UserClient,main:127 - 1. Request Catalog
+2. Add Course
+3. Drop Course
+4. Pay Bill
+6. View Report Card 
+7.Exit
+15:49:04,084  INFO UserClient,main:132 - Enter Choice
+15:49:05,806  INFO UserClient,main:139 - null1,History,null2,Chemistry,null
+15:49:05,806  INFO UserClient,main:132 - Enter Choice
+15:53:47,320  INFO UserClient,main:37 - ***********Welcome To Student Management System***********
+15:53:47,325  INFO UserClient,main:42 - 
+      Enter username
+15:54:22,575  INFO UserClient,main:45 - Enter password
+16:08:22,946  INFO UserClient,main:37 - ***********Welcome To Student Management System***********
+16:08:22,949  INFO UserClient,main:42 - Enter username
+16:08:27,636  INFO UserClient,main:45 - Enter password
+16:08:29,664 DEBUG UserClient,main:42 - admin
+16:08:29,692  INFO UserClient,main:63 - 2020-06-13  16:08:29.691 SATURDAY: Successfully logged in as nikita
+16:08:29,695  INFO UserClient,main:22 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+16:08:29,773  INFO UserClient,main:32 - Enter Choice
+16:09:24,230  INFO UserClient,main:37 - ***********Welcome To Student Management System***********
+16:09:24,232  INFO UserClient,main:42 - Enter username
+16:09:33,421  INFO UserClient,main:45 - Enter password
+16:09:34,787 DEBUG UserClient,main:42 - admin
+16:09:34,803  INFO UserClient,main:63 - 2020-06-13  16:09:34.802 SATURDAY: Successfully logged in as nikita
+16:09:34,803  INFO UserClient,main:19 - ============================
+16:09:34,804  INFO UserClient,main:20 - |        ADMIN MENU        |
+16:09:34,804  INFO UserClient,main:22 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+16:09:34,805  INFO UserClient,main:32 - Enter Choice
+16:10:10,476  INFO UserClient,main:37 - ***********Welcome To Student Management System***********
+16:10:10,478  INFO UserClient,main:42 - Enter username
+16:10:13,869  INFO UserClient,main:45 - Enter password
+16:10:16,059 DEBUG UserClient,main:42 - admin
+16:10:16,073  INFO UserClient,main:63 - 2020-06-13  16:10:16.072 SATURDAY: Successfully logged in as nikita
+16:10:16,074  INFO UserClient,main:19 - ============================
+16:10:16,075  INFO UserClient,main:20 - |        ADMIN MENU        |
+16:10:16,075  INFO UserClient,main:22 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+16:10:16,076  INFO UserClient,main:32 - Enter Choice
+16:34:58,994  INFO UserClient,main:37 - ***********Welcome To Student Management System***********
+16:34:58,998  INFO UserClient,main:42 - Enter username
+16:36:10,783  INFO UserClient,main:37 - ***********Welcome To Student Management System***********
+16:36:10,785  INFO UserClient,main:42 - Enter username
+16:37:08,317  INFO UserClient,main:37 - ***********Welcome To Student Management System***********
+16:37:08,321  INFO UserClient,main:42 - Enter username
+16:37:14,043  INFO UserClient,main:45 - Enter password
+16:38:06,409  INFO UserClient,main:45 - Enter password
+16:41:26,717  INFO UserClient,main:37 - ***********Welcome To Student Management System***********
+16:41:26,722  INFO UserClient,main:42 - Enter username
+16:41:29,847  INFO UserClient,main:45 - Enter password
+16:42:19,958  INFO UserClient,main:37 - ***********Welcome To Student Management System***********
+16:42:19,961  INFO UserClient,main:42 - Enter username
+16:42:22,764  INFO UserClient,main:45 - Enter password
+16:43:27,213  INFO UserClient,main:37 - ***********Welcome To Student Management System***********
+16:43:27,215  INFO UserClient,main:42 - Enter username
+16:43:32,481  INFO UserClient,main:45 - Enter password
+16:44:36,233  INFO UserClient,main:37 - ***********Welcome To Student Management System***********
+16:44:36,236  INFO UserClient,main:42 - Enter username
+16:44:39,392  INFO UserClient,main:45 - Enter password
+16:58:27,899  INFO UserClient,main:38 - ***********Welcome To Student Management System***********
+16:58:27,901  INFO UserClient,main:43 - Enter username
+16:58:32,880  INFO UserClient,main:46 - Enter password
+16:58:35,180 DEBUG UserClient,main:42 - admin
+16:58:35,193  INFO UserClient,main:64 - 2020-06-13  16:58:35.192 SATURDAY: Successfully logged in as nikita
+16:58:35,194  INFO UserClient,main:22 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+16:58:35,195  INFO UserClient,main:32 - Enter Choice
+17:00:25,800  INFO UserClient,main:38 - ***********Welcome To Student Management System***********
+17:00:25,804  INFO UserClient,main:43 - Enter username
+17:00:31,946  INFO UserClient,main:46 - Enter password
+17:00:34,858 DEBUG UserClient,main:42 - admin
+17:00:34,872  INFO UserClient,main:64 - 2020-06-13  17:00:34.871 SATURDAY: Successfully logged in as nikita
+17:00:34,873  INFO UserClient,main:22 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+17:00:34,874  INFO UserClient,main:32 - Enter Choice
+17:01:37,084  INFO UserClient,main:38 - ***********Welcome To Student Management System***********
+17:01:37,087  INFO UserClient,main:43 - Enter username
+17:01:52,183  INFO UserClient,main:38 - ***********Welcome To Student Management System***********
+17:01:52,186  INFO UserClient,main:43 - Enter username
+17:01:55,575  INFO UserClient,main:46 - Enter password
+17:01:57,896 DEBUG UserClient,main:42 - admin
+17:01:57,923  INFO UserClient,main:64 - 2020-06-13  17:01:57.922 SATURDAY: Successfully logged in as nikita
+17:01:57,925  INFO UserClient,main:22 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+17:01:57,927  INFO UserClient,main:32 - Enter Choice
+17:03:17,454  INFO UserClient,main:38 - ***********Welcome To Student Management System***********
+17:03:17,456  INFO UserClient,main:43 - Enter username
+17:03:21,803  INFO UserClient,main:46 - Enter password
+17:03:24,150 DEBUG UserClient,main:42 - admin
+17:03:24,171  INFO UserClient,main:64 - 2020-06-13  17:03:24.171 SATURDAY: Successfully logged in as nikita
+17:03:24,173  INFO UserClient,main:22 - 
+1. View all users
+2. View all courses
+3. Add user
+4. Delete User
+5. Update User
+6. Add Course
+7. Delete Course
+8. Update Course 
+9. Generate Report Card
+10.Exit 
+17:03:24,175  INFO UserClient,main:32 - Enter Choice
